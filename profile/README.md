@@ -31,7 +31,7 @@ Grid Platform is an open-source Infrastructure Orchestration Platform that solve
 | [grid-operator](https://github.com/gridplatform/grid-operator) | Kubernetes Operator (Go) | 🚧 In Development |
 | [grid-ml](https://github.com/gridplatform/grid-ml) | AI/ML Features (Python) | 🚧 In Development |
 | [grid-docs](https://github.com/gridplatform/grid-docs) | Documentation (Docusaurus) | 🚧 In Development |
-| [gridplatform.org](https://github.com/gridplatform/gridplatform.org) | Website (Next.js) | 🚧 In Development |
+<!-- | [gridplatform.org](https://github.com/gridplatform/gridplatform.org) | Website (Next.js) | 🚧 In Development | -->
 
 ## 🚀 Quick Start
 
