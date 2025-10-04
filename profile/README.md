@@ -1,4 +1,4 @@
-# Grid Platform
+<!-- # Grid Platform -->
 
 ![Grid Banner](../readme-assets/banner.png)
 
