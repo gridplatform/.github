@@ -7,8 +7,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/gridplatform/grid-core?style=social)](https://github.com/gridplatform/grid-core)
-<!-- [![CNCF](https://img.shields.io/badge/CNCF-Sandbox-blue)](https://www.cncf.io/) -->
 [![Discord](https://img.shields.io/discord/1234567890?color=7289da&logo=discord&logoColor=white)](https://discord.gg/gridplatform)
+<!-- [![CNCF](https://img.shields.io/badge/CNCF-Sandbox-blue)](https://www.cncf.io/) -->
 
 ## 🚀 What is Grid Platform?
 
