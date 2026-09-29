@@ -38,12 +38,16 @@ Grid turns path-shaped infrastructure JSON into Terraform via a public module ba
 
 ## Quick start — self-host
 
+1. **[Create remote Terraform state](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** (S3 / GCS / Azure) — do this before applying real infra  
+2. Install Grid (Compose or VM) and set `GRID_TF_*` in `.env`  
+3. Open the console and run plan/apply releases  
+
 **Docker Compose**
 
 ```bash
 git clone https://github.com/gridplatform/grid-core.git
 cd grid-core
-cp install/.env.example install/.env   # set GRID_AUTH_ADMIN_PASSWORD
+cp install/.env.example install/.env   # set GRID_AUTH_ADMIN_PASSWORD + GRID_TF_*
 docker compose -f install/docker-compose.yml --env-file install/.env up -d --build
 ```
 
@@ -51,8 +55,11 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 ```bash
 export GRID_AUTH_ADMIN_PASSWORD='choose-a-strong-password'
+# optionally: export GRID_TF_BACKEND=s3 GRID_TF_STATE_BUCKET=… GRID_TF_LOCK_TABLE=…
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
 ```
+
+Full guides: **[Install docs](https://github.com/gridplatform/grid-docs/tree/main/docs/install)**
 
 Full guides: **[Install docs](https://github.com/gridplatform/grid-docs/tree/main/docs/install)**
 
