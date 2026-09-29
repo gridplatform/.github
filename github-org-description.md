@@ -4,7 +4,7 @@
 **Grid Platform**
 
 ## Organization Description
-**Solving the open-source infrastructure problem** - A community-driven, self-hosted Infrastructure Orchestration Platform that gives you complete control over your cloud infrastructure without vendor lock-in. Built by the community, for the community.
+Open-source, self-hosted infrastructure orchestration — desired-state JSON, Terraform modules, and an audited release console. No vendor lock-in.
 
 ## Organization Website
 https://gridplatform.org
@@ -13,44 +13,38 @@ https://gridplatform.org
 Global (Open Source Community)
 
 ## Organization Bio
-Grid Platform is an open-source Infrastructure Orchestration Platform that solves the problem of vendor lock-in and expensive proprietary infrastructure management tools. We believe infrastructure should be transparent, controllable, extensible, and accessible to everyone.
+Grid Platform is a community-driven Infrastructure Orchestration Platform. Run the control plane on your own VM or with Docker Compose; keep cloud credentials and Terraform state under your control.
 
 ## Key Focus Areas
-- **Open Source Infrastructure** - Transparent, community-driven infrastructure management
-- **Multi-Cloud Support** - GCP, AWS, Azure deployment and management
-- **GitOps Native** - Git as single source of truth with ArgoCD integration
-- **Kubernetes Native** - Cloud-native architecture using CRDs and operators
-- **Community First** - Built by contributors who use the platform
-- **No Vendor Lock-in** - Own your infrastructure code and configurations
+- **Self-hosted control plane** — grid-core + grid-ui + grid-cli
+- **GitOps desired-state** — grid-config (or your fork)
+- **Multi-cloud modules** — grid-terraform (AWS, GCP, and growing)
+- **Audited releases** — plan / apply / destroy with live logs
+- **No vendor lock-in** — plain Terraform exit path via `archive/`
+- **Docs-first install** — grid-docs
 
-## Community Values
-- **Transparency** - Open source code and processes
-- **Collaboration** - Community-driven development and decision making
-- **Accessibility** - Free and available to everyone
-- **Innovation** - Cutting-edge infrastructure management capabilities
-- **Inclusivity** - Welcoming contributors from all backgrounds
+## Public product repos (install surface)
+- **grid-core** — API + `install/` (Compose, `install.sh`, systemd)
+- **grid-ui** — Console
+- **grid-cli** — Generate / plan / apply / destroy
+- **grid-config** — Sample desired-state
+- **grid-terraform** — Module bank
+- **grid-docs** — Documentation
 
-## Repositories
-- **grid-core** - Backend API (Node.js + Express + TypeScript)
-- **grid-ui** - Frontend interface (React + Vite + Tailwind CSS)
-- **grid-terraform** - Infrastructure modules (Terraform + HCL)
-- **grid-operator** - Kubernetes operator (Go + Kubebuilder)
-- **grid-docs** - Documentation (Docusaurus)
-- **gridplatform.org** - Website (Next.js + TypeScript)
+## Planned (private for now)
+- **grid-operator** — Kubernetes operator
+- **grid-ml** — ML / assistant features
 
 ## Community Links
-- **GitHub Discussions** - Community collaboration and support
-- **Discord** - Real-time community chat
-- **Twitter** - Updates and community highlights
-- **Blog** - Community stories and technical posts
-- **YouTube** - Tutorials and demos
-- **LinkedIn** - Professional network
+- **GitHub Discussions** — Q&A and proposals
+- **Issues** — Bugs and features on each repo
+- **Website** — https://gridplatform.org
 
 ## License
-MIT License - Free and open source forever
+MIT License — free and open source
 
 ## Contributing
-We welcome contributions from the community! Whether you're fixing bugs, adding features, improving documentation, or helping with infrastructure, there's a place for you in the Grid Platform community.
+Fork → branch → pull request. Do not push straight to `main`.
 
 ## Mission
-To democratize infrastructure management by providing a free, open-source, self-hosted platform that gives organizations complete control over their cloud infrastructure without vendor lock-in or expensive licensing.
+Democratize infrastructure management with a free, self-hosted platform that stays transparent and portable.

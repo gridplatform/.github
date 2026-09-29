@@ -3,65 +3,69 @@
 ![Grid Banner](../readme-assets/banner.png)
 
 > **Infrastructure Orchestration Platform**  
-> **Open-source, self-hosted alternative to expensive proprietary tools** - Complete control over your cloud infrastructure without vendor lock-in.
+> Open-source, self-hosted control plane for cloud infrastructure — desired-state JSON, Terraform modules, releases with live logs. No vendor lock-in.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/gridplatform/grid-core?style=social)](https://github.com/gridplatform/grid-core)
-[![Discord](https://img.shields.io/discord/1234567890?color=7289da&logo=discord&logoColor=white)](https://discord.gg/gridplatform)
-<!-- [![CNCF](https://img.shields.io/badge/CNCF-Sandbox-blue)](https://www.cncf.io/) -->
 
-## 🚀 What is Grid Platform?
+## What is Grid?
 
-Grid Platform is an open-source Infrastructure Orchestration Platform that solves the problem of expensive, vendor-locked infrastructure management tools. Built for solo DevOps engineers and mid-market companies who need enterprise-grade capabilities without the enterprise price tag.
+Grid turns path-shaped infrastructure JSON into Terraform via a public module bank, runs **plan / apply / destroy** as audited **releases**, and ships a console for GitOps-style desired state.
 
-**Key Benefits:**
-- **🚫 No Vendor Lock-in** - Own your infrastructure code
-- **💰 Free Forever** - No $50k-200k/year licensing fees
-- **🔒 Self-Hosted** - Complete data sovereignty
-- **☸️ Kubernetes Native** - Cloud-native architecture
-- **🔄 GitOps First** - Built for modern DevOps workflows
+**Highlights**
+- Self-hosted (your VM or Compose) — you keep credentials and state
+- Multi-cloud modules in [grid-terraform](https://github.com/gridplatform/grid-terraform) (AWS, GCP, …)
+- GitOps desired-state in [grid-config](https://github.com/gridplatform/grid-config) (or your fork)
+- Fork → PR to contribute; `main` is protected by review + CI
 
-## 🏗️ Repository Overview
+## Public repositories
 
 | Repository | Purpose | Status |
 |------------|---------|--------|
-| [grid-core](https://github.com/gridplatform/grid-core) | Backend API (Node.js/TypeScript) | 🚧 In Development |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | Frontend Interface (React/TypeScript) | 🚧 In Development |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | CLI — JSON → Terraform generate / plan / deploy | 🚧 In Development |
-| [grid-config](https://github.com/gridplatform/grid-config) | Desired-state GitOps JSON + `archive/` | 🚧 In Development |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Infrastructure Modules (Terraform) | 🚧 In Development |
-| [grid-operator](https://github.com/gridplatform/grid-operator) | Kubernetes Operator (Go) | 🚧 In Development |
-| [grid-ml](https://github.com/gridplatform/grid-ml) | AI/ML Features (Python) | 🚧 In Development |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Documentation (Docusaurus) | 🚧 In Development |
-<!-- | [gridplatform.org](https://github.com/gridplatform/gridplatform.org) | Website (Next.js) | 🚧 In Development | -->
+| [grid-core](https://github.com/gridplatform/grid-core) | Control-plane API + install packaging | **Public** — active |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | Console (React) | **Public** — active |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate / plan / apply / destroy | **Public** — active |
+| [grid-config](https://github.com/gridplatform/grid-config) | Sample desired-state (GitOps) | **Public** — active |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform module bank | **Public** — active |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Install + product docs (Docusaurus) | **Public** — active |
 
-## 🚀 Quick Start
+### Later / not required for install
 
-Self-host on a VM or with Docker Compose — guides live in **grid-docs** (not this org profile repo):
+| Repository | Purpose | Status |
+|------------|---------|--------|
+| [grid-operator](https://github.com/gridplatform/grid-operator) | Kubernetes operator | Private — planned |
+| [grid-ml](https://github.com/gridplatform/grid-ml) | ML / assistant features | Private — planned |
 
-- **[Install overview](https://github.com/gridplatform/grid-docs/blob/main/docs/install/overview.md)**
-- **[Install on a VM](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**
-- **[Docker Compose](https://github.com/gridplatform/grid-docs/blob/main/docs/install/docker-compose.md)**
+## Quick start — self-host
 
-Local API hack loop:
+**Docker Compose**
 
 ```bash
 git clone https://github.com/gridplatform/grid-core.git
 cd grid-core
-npm install
-npm run dev
+cp install/.env.example install/.env   # set GRID_AUTH_ADMIN_PASSWORD
+docker compose -f install/docker-compose.yml --env-file install/.env up -d --build
 ```
 
-## 📚 Learn More
+**Ubuntu VM**
 
-- **📖 [Documentation](https://github.com/gridplatform/grid-docs)** — install, concepts, admin, CLI (`docs/`)
-- **🌐 [Website](https://gridplatform.org)** - Learn more about Grid Platform
-- **💬 [Discord Community](https://discord.gg/gridplatform)** - Get help and connect with users
-- **🐛 [Report Issues](https://github.com/gridplatform/grid-core/issues)** - Found a bug? Let us know!
+```bash
+export GRID_AUTH_ADMIN_PASSWORD='choose-a-strong-password'
+curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
+```
 
-## 🤝 Contributing
+Full guides: **[Install docs](https://github.com/gridplatform/grid-docs/tree/main/docs/install)**
 
-We welcome contributions! See our [Contributing Guide](https://github.com/gridplatform/grid-core/blob/main/CONTRIBUTING.md) for details.
+## Learn more
+
+- [Documentation (grid-docs)](https://github.com/gridplatform/grid-docs)
+- [Website](https://gridplatform.org)
+- [Report issues](https://github.com/gridplatform/grid-core/issues)
+
+## Contributing
+
+Fork the repo → branch → open a pull request against `main`.  
+See each repository’s `CONTRIBUTING.md` (and [grid-docs](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md)).
 
 ---
 

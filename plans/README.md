@@ -1,5 +1,10 @@
 # Grid Platform Development Plans
 
+> **Note (2026):** These files are **historical planning notes** from early design.
+> They are not the live product roadmap. For install and current docs, use
+> **[grid-docs](https://github.com/gridplatform/grid-docs)**. Public product repos
+> (core / ui / cli / config / terraform / docs) are active; operator and ML remain planned.
+
 **Goal:** Comprehensive development roadmap and methodology for building the Grid Platform
 
 ## 📋 Plan Overview

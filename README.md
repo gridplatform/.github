@@ -1,26 +1,30 @@
 # Grid Platform Organization
 
-This repository contains organization-wide configuration and profile information for the Grid Platform open-source project.
+Organization profile and shared metadata for **[gridplatform](https://github.com/gridplatform)**.
 
-## Organization Profile
+This repository is **not** the product install guide. Install docs live in **[grid-docs](https://github.com/gridplatform/grid-docs)**; packaging lives in **[grid-core/install](https://github.com/gridplatform/grid-core/tree/main/install)**.
 
-The main organization profile README is located at [`profile/README.md`](profile/README.md).
+## Layout
 
-## Repository Structure
+| Path | Purpose |
+|------|---------|
+| [`profile/README.md`](profile/README.md) | GitHub org profile (what visitors see on the org page) |
+| [`readme-assets/`](readme-assets/) | Banner / branding assets |
+| [`github-org-description.md`](github-org-description.md) | Org about-text draft |
+| [`plans/`](plans/) | Historical planning notes (not product docs) |
 
-- **`profile/`** - Organization profile README and assets
-- **`readme-assets/`** - Shared assets for organization branding
-- **`github-org-description.md`** - Organization description and metadata
+## Public product status
 
-## About Grid Platform
-
-Grid Platform is an open-source Infrastructure Orchestration Platform that solves the problem of vendor lock-in and expensive proprietary infrastructure management tools. We believe infrastructure should be transparent, controllable, extensible, and accessible to everyone.
+| Repo | Visibility | Role |
+|------|------------|------|
+| grid-core, grid-ui, grid-cli, grid-docs, grid-config, grid-terraform | **Public** | Install & operate Grid |
+| grid-operator, grid-ml | Private | Planned |
 
 ## Community
 
 - **GitHub**: [gridplatform](https://github.com/gridplatform)
-- **Discord**: [Join our community](https://discord.gg/gridplatform)
 - **Website**: [gridplatform.org](https://gridplatform.org)
+- **Docs**: [grid-docs](https://github.com/gridplatform/grid-docs)
 
 ---
 
