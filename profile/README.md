@@ -27,6 +27,8 @@ Grid Platform is an open-source Infrastructure Orchestration Platform that solve
 |------------|---------|--------|
 | [grid-core](https://github.com/gridplatform/grid-core) | Backend API (Node.js/TypeScript) | 🚧 In Development |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | Frontend Interface (React/TypeScript) | 🚧 In Development |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | CLI — JSON → Terraform generate / plan / deploy | 🚧 In Development |
+| [grid-config](https://github.com/gridplatform/grid-config) | Desired-state GitOps JSON + `archive/` | 🚧 In Development |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | Infrastructure Modules (Terraform) | 🚧 In Development |
 | [grid-operator](https://github.com/gridplatform/grid-operator) | Kubernetes Operator (Go) | 🚧 In Development |
 | [grid-ml](https://github.com/gridplatform/grid-ml) | AI/ML Features (Python) | 🚧 In Development |
@@ -35,21 +37,24 @@ Grid Platform is an open-source Infrastructure Orchestration Platform that solve
 
 ## 🚀 Quick Start
 
+Self-host on a VM or with Docker Compose — guides live in **grid-docs** (not this org profile repo):
+
+- **[Install overview](https://github.com/gridplatform/grid-docs/blob/main/docs/install/overview.md)**
+- **[Install on a VM](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**
+- **[Docker Compose](https://github.com/gridplatform/grid-docs/blob/main/docs/install/docker-compose.md)**
+
+Local API hack loop:
+
 ```bash
-# Clone the core repository
 git clone https://github.com/gridplatform/grid-core.git
 cd grid-core
-
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
 ```
 
 ## 📚 Learn More
 
-- **📖 [Full Documentation](https://github.com/gridplatform/grid-docs)** - Comprehensive guides and API reference
+- **📖 [Documentation](https://github.com/gridplatform/grid-docs)** — install, concepts, admin, CLI (`docs/`)
 - **🌐 [Website](https://gridplatform.org)** - Learn more about Grid Platform
 - **💬 [Discord Community](https://discord.gg/gridplatform)** - Get help and connect with users
 - **🐛 [Report Issues](https://github.com/gridplatform/grid-core/issues)** - Found a bug? Let us know!
