@@ -1,4 +1,8 @@
-# Grid
+<div align="center">
+
+**English** · [简体中文](../docs/readme/README_zh.md) · [繁體中文](../docs/readme/README_zh-TW.md) · [日本語](../docs/readme/README_ja.md) · [한국어](../docs/readme/README_ko.md) · [Türkçe](../docs/readme/README_tr.md) · [Русский](../docs/readme/README_ru.md) · [Tiếng Việt](../docs/readme/README_vi.md) · [ไทย](../docs/readme/README_th.md) · [Deutsch](../docs/readme/README_de.md) · [Español](../docs/readme/README_es.md) · [Français](../docs/readme/README_fr.md) · [Українська](../docs/readme/README_uk.md) · [Polski](../docs/readme/README_pl.md) · [Português (Brasil)](../docs/readme/README_pt-BR.md) · [العربية](../docs/readme/README_ar.md) · [فارسی](../docs/readme/README_fa.md) · [Bahasa Indonesia](../docs/readme/README_id.md) · [Italiano](../docs/readme/README_it.md)
+
+# Grid Platform
 
 ### Self-hosted infrastructure orchestration — desired-state JSON, Terraform modules, audited releases.
 
@@ -7,12 +11,19 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
-
-![Grid Banner](../readme-assets/banner.png)
+[![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../STATUS.md)
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../STATUS.md)**
 
-[Quick start](#quick-start) · [How it works](#how-it-works) · [Repositories](#repositories) · [Documentation](#documentation)
+[Quick start](#quick-start) · [How it works](#how-it-works) · [Your desired state](#your-desired-state) · [Repositories](#repositories) · [Documentation](#documentation)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
+```
+
+![Grid Banner](../readme-assets/banner.png)
+
+</div>
 
 ---
 
@@ -48,13 +59,25 @@ Full path: **[Install on a VM](https://github.com/gridplatform/grid-docs/blob/ma
 
 | Piece | Role |
 |-------|------|
-| Desired-state JSON | What to deploy (`grid-config` or your fork) |
-| Module bank | Terraform modules (`grid-terraform`) |
+| **Your** desired-state repo | GitHub repo you create — JSON for what you deploy |
+| Module bank | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
 | grid-cli | Generate → plan → apply → destroy |
 | grid-core | API, GitOps sync, releases + live logs |
 | grid-ui | Console |
 
 Cloud permissions come from the **host identity** (AWS instance role / GCP ADC). Desired-state files do not carry credentials. Production uses remote state so a replaced VM does not lose the Terraform map.
+
+## Your desired state
+
+**[grid-config](https://github.com/gridplatform/grid-config) is an example only.** Read it to learn the JSON shape. Do **not** fork it for production.
+
+For a real deploy:
+
+1. Create a **new** GitHub repository under your org or account.
+2. Add your own path-shaped JSON (provider / env / resource units).
+3. Point Grid at that repo (`GRID_GITOPS_REPO_URL`) — not at `grid-config`.
+
+Copy patterns from the example; own the repo and the settings.
 
 ## Repositories
 
@@ -64,7 +87,7 @@ Cloud permissions come from the **host identity** (AWS instance role / GCP ADC).
 | [grid-ui](https://github.com/gridplatform/grid-ui) | Console |
 | [grid-cli](https://github.com/gridplatform/grid-cli) | Generate / plan / apply / destroy |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | Module bank |
-| [grid-config](https://github.com/gridplatform/grid-config) | Sample desired-state (GitOps) |
+| [grid-config](https://github.com/gridplatform/grid-config) | **Example** desired-state (not your production fork) |
 | [grid-docs](https://github.com/gridplatform/grid-docs) | Documentation |
 
 Done / in progress / planned: **[STATUS.md](../STATUS.md)**.
@@ -81,7 +104,10 @@ Done / in progress / planned: **[STATUS.md](../STATUS.md)**.
 
 ## Contributing
 
-Fork → branch → PR against `main`. See [grid-docs CONTRIBUTING](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md) and each repo’s guidelines.
+Fork a **product** repo (core, ui, cli, terraform, docs) → branch → PR against `main`.  
+Do not treat `grid-config` as your private desired-state home.
+
+See [grid-docs CONTRIBUTING](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md).
 
 Issues: [grid-core](https://github.com/gridplatform/grid-core/issues).
 

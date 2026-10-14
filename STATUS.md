@@ -13,6 +13,7 @@ Last updated: 2026-10-14
 - Remote Terraform state + archive mirror (S3 / GCS / Azure, …)
 - AWS + GCP catalogs marked **supported** in `grid-cli`
 - Network fabric / control desired-state examples
+- Org profile README (centered) + localized variants; `grid-config` documented as example-only (create your own desired-state repo)
 - Host monitoring plane (Prometheus + Alertmanager + Alloy); Alerts in console Settings
 - Production boot gates for monitoring + remote state
 
