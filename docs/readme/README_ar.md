@@ -77,14 +77,14 @@ Grid هو المكان الذي تذهب إليه فرقك **لطلب موارد
 
 ## المستودعات
 
-| Repository | دور |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | وحدة التحكم |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | حالة مرغوبة **للمثال** (ليست fork إنتاجك) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | التوثيق |
+| المستودع | الغرض منه |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | يشغّل Grid على جهازك — المحرك من وراء الكواليس وطريقة التثبيت |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | الموقع الذي تستخدمه في المتصفح |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | نفس العمل من سطر الأوامر دون فتح الموقع |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | قطع جاهزة لموارد سحابية شائعة (شبكات وخوادم وغيرها) |
+| [grid-config](https://github.com/gridplatform/grid-config) | إعدادات نموذجية للتعلّم — **ليست** إعدادك الحقيقي (أنشئ مستودعك الخاص) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | أدلة بلغة واضحة |
 
 منجز / قيد التنفيذ / مخطط: **[STATUS.md](../../STATUS.md)**.
 

@@ -77,14 +77,14 @@ Reprenez des idées de l’exemple ; gardez la propriété du dépôt et des ré
 
 ## Dépôts
 
-| Repository | Rôle |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | Console |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | État désiré **d’exemple** (pas votre fork de prod) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Documentation |
+| Dépôt | À quoi ça sert |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | Fait tourner Grid sur votre machine — le moteur en coulisse, et comment l’installer |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | Le site web que vous utilisez dans le navigateur |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | Le même travail depuis un terminal, sans ouvrir le site |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Des briques prêtes pour des ressources cloud courantes (réseaux, serveurs, etc.) |
+| [grid-config](https://github.com/gridplatform/grid-config) | Configs d’exemple pour apprendre — **pas** votre vrai setup (créez votre propre dépôt) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Guides en langage clair |
 
 Fait / en cours / prévu : **[STATUS.md](../../STATUS.md)**.
 

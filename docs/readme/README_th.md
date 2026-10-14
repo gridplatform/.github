@@ -75,16 +75,16 @@ Grid คือที่ที่ทีมของคุณไป**ขอทร�
 
 ยืมไอเดียจากตัวอย่าง เก็บความเป็นเจ้าของรีโปและการตั้งค่าไว้เอง
 
-## รีโป
+## Repositories
 
-| Repository | บทบาท |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | คอนโซล |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | desired-state **ตัวอย่าง** (ไม่ใช่ fork โปรดักชัน) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | เอกสาร |
+| Repository | มีไว้ทำอะไร |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | รัน Grid บนเครื่องคุณ — เอนจินเบื้องหลังและวิธีติดตั้ง |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | เว็บไซต์ที่คุณใช้ในเบราว์เซอร์ |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | งานเดียวกันจากเทอร์มินัล โดยไม่ต้องเปิดเว็บไซต์ |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | ชิ้นส่วนพร้อมใช้สำหรับทรัพยากรคลาวด์ทั่วไป (เครือข่าย เซิร์ฟเวอร์ และอื่นๆ) |
+| [grid-config](https://github.com/gridplatform/grid-config) | คอนฟิกตัวอย่างสำหรับเรียนรู้ — **ไม่ใช่** setup จริงของคุณ (สร้าง repository ของคุณเอง) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | คู่มือภาษาเข้าใจง่าย |
 
 เสร็จ / กำลังทำ / วางแผน: **[STATUS.md](../../STATUS.md)**
 

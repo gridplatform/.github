@@ -77,14 +77,14 @@ Grid는 **당신이** 통제하는 장비에서 돌아갑니다. 클라우드 �
 
 ## 저장소
 
-| Repository | 역할 |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | 콘솔 |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | **예시** desired-state (프로덕션 fork 아님) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | 문서 |
+| 저장소 | 무엇을 위한 것인가 |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | 당신 장비에서 Grid를 돌리는 엔진 — 그리고 설치 방법 |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | 브라우저에서 쓰는 웹사이트 |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | 웹사이트 없이 터미널에서 같은 일을 하는 도구 |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | 흔한 클라우드 자원을 위한 준비된 조각 (네트워크, 서버 등) |
+| [grid-config](https://github.com/gridplatform/grid-config) | 배우기용 샘플 설정 — 실제 환경이 **아님** (직접 저장소를 만드세요) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | 쉬운 말로 쓴 가이드 |
 
 완료 / 진행 중 / 계획: **[STATUS.md](../../STATUS.md)**.
 

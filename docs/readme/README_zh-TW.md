@@ -78,13 +78,13 @@ Grid 是團隊用來**申請雲端資源**並**看清楚實際改了什麼**的�
 ## 倉庫
 
 | 倉庫 | 用途 |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | 主控台 |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform 模組（[grid-terraform](https://github.com/gridplatform/grid-terraform)） |
-| [grid-config](https://github.com/gridplatform/grid-config) | **範例**期望狀態（不是你的正式 fork） |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | 文件 |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | 在你的機器上執行 Grid — 背後的引擎，以及如何安裝 |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | 你在瀏覽器裡用的網站 |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | 同樣的工作，在終端機完成，不必開啟網站 |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | 常見雲端資源的現成積木（網路、伺服器等） |
+| [grid-config](https://github.com/gridplatform/grid-config) | 用來學習的範例設定 — **不是**你的真實環境（請自建倉庫） |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | 淺白易懂的指南 |
 
 完成 / 進行中 / 計劃：**[STATUS.md](../../STATUS.md)**。
 

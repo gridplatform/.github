@@ -75,6 +75,19 @@ Para o seu próprio setup:
 
 Copie ideias do exemplo; fique com a propriedade do repository e das configurações.
 
+## Repositórios
+
+| Repositório | Para que serve |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | Roda o Grid na sua máquina — o motor nos bastidores e como instalar |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | O site que você usa no navegador |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | O mesmo trabalho no terminal, sem abrir o site |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Peças prontas para recursos cloud comuns (redes, servidores e mais) |
+| [grid-config](https://github.com/gridplatform/grid-config) | Configs de exemplo para aprender — **não** o seu setup real (crie seu próprio repositório) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Guias em linguagem clara |
+
+Done / in progress / planned: **[STATUS.md](../../STATUS.md)**.
+
 ## Documentação
 
 | Guia | Link |

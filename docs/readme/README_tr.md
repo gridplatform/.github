@@ -77,14 +77,14 @@ Kendi kurulumunuz için:
 
 ## Depolar
 
-| Repository | Rol |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | Konsol |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | **Örnek** desired-state (üretim fork’unuz değil) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Dokümantasyon |
+| Depo | Ne işe yarar |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | Grid’i makinenizde çalıştırır — arkadaki motor ve kurulum |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | Tarayıcıda kullandığınız web sitesi |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | Aynı işi web sitesi açmadan terminalden yapan araç |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Sık kullanılan bulut kaynakları için hazır parçalar (ağlar, sunucular ve daha fazlası) |
+| [grid-config](https://github.com/gridplatform/grid-config) | Öğrenmek için örnek ayarlar — gerçek kurulumunuz **değil** (kendi deponuzu oluşturun) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Sade dille yazılmış rehberler |
 
 Bitti / devam ediyor / planlandı: **[STATUS.md](../../STATUS.md)**.
 

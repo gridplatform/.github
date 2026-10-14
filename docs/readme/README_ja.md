@@ -77,14 +77,14 @@ Grid は**あなたが**管理するマシンで動かします。クラウド�
 
 ## リポジトリ
 
-| Repository | 役割 |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | コンソール |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | **例**の desired-state（本番の fork ではない） |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | ドキュメント |
+| リポジトリ | 何のためのものか |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | あなたのマシンで Grid を動かす仕組み — 裏側のエンジンとインストール方法 |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | ブラウザで使うウェブサイト |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | ウェブサイトを開かず、同じ作業をターミナルから行うツール |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | よく使うクラウド資源の既製パーツ（ネットワーク、サーバーなど） |
+| [grid-config](https://github.com/gridplatform/grid-config) | 学び用のサンプル設定 — 本番のセットアップでは**ない**（自分のリポジトリを作る） |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | わかりやすいガイド |
 
 完了 / 進行中 / 予定：**[STATUS.md](../../STATUS.md)**。
 

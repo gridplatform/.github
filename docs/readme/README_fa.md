@@ -77,14 +77,14 @@ Grid را روی سخت‌افزاری زیر کنترل **خودتان** اجر
 
 ## مخازن
 
-| Repository | نقش |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | کنسول |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | desired-state **نمونه** (نه فورک تولید شما) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | مستندات |
+| مخزن | برای چیست |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | Grid را روی ماشین شما اجرا می‌کند — موتور پشت‌صحنه و نحوه نصب |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | وب‌سایتی که در مرورگر استفاده می‌کنید |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | همان کار از ترمینال، بدون باز کردن وب‌سایت |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | قطعات آماده برای منابع ابری رایج (شبکه، سرور و بیشتر) |
+| [grid-config](https://github.com/gridplatform/grid-config) | پیکربندی نمونه برای یادگیری — setup واقعی شما **نیست** (مخزن خودتان را بسازید) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | راهنماها به زبان ساده |
 
 انجام‌شده / در حال انجام / برنامه‌ریزی‌شده: **[STATUS.md](../../STATUS.md)**.
 

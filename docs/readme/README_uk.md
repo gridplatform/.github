@@ -77,14 +77,14 @@ Grid — місце, куди команда йде **попросити хма�
 
 ## Репозиторії
 
-| Repository | Роль |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | Консоль |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | **Приклад** desired-state (не ваш продовий fork) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Документація |
+| Репозиторій | Для чого це |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | Запускає Grid на вашій машині — рушій за лаштунками та спосіб встановлення |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | Сайт, яким ви користуєтесь у браузері |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | Та сама робота з терміналу, без відкриття сайту |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Готові блоки для звичайних хмарних ресурсів (мережі, сервери тощо) |
+| [grid-config](https://github.com/gridplatform/grid-config) | Приклад конфігів для навчання — **не** ваш реальний setup (створіть власний репозиторій) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Посібники простою мовою |
 
 Зроблено / в роботі / заплановано: **[STATUS.md](../../STATUS.md)**.
 

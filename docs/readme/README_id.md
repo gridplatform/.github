@@ -77,14 +77,14 @@ Pinjam ide dari contoh; tetap miliki repository dan pengaturannya.
 
 ## Repositori
 
-| Repository | Peran |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | Konsol |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | Desired-state **contoh** (bukan fork produksi Anda) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Dokumentasi |
+| Repositori | Untuk apa |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | Menjalankan Grid di mesin Anda — mesin di balik layar plus cara memasangnya |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | Situs web yang Anda pakai di browser |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | Pekerjaan yang sama dari terminal, tanpa membuka situs |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Bagian siap pakai untuk sumber daya cloud umum (jaringan, server, dan lainnya) |
+| [grid-config](https://github.com/gridplatform/grid-config) | Contoh konfigurasi untuk belajar — **bukan** setup nyata Anda (buat repositori sendiri) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Panduan dalam bahasa yang jelas |
 
 Selesai / berlangsung / direncanakan: **[STATUS.md](../../STATUS.md)**.
 

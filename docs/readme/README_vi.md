@@ -75,16 +75,16 @@ Cho setup của bạn:
 
 Mượn ý từ ví dụ; giữ quyền sở hữu repository và cài đặt.
 
-## Kho mã
+## Repositories
 
-| Repository | Vai trò |
-|------|------|
-| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | Console |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate → plan → apply → destroy |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| [grid-config](https://github.com/gridplatform/grid-config) | Desired-state **ví dụ** (không phải fork production) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Tài liệu |
+| Repository | Dùng để làm gì |
+|------------|---------------|
+| [grid-core](https://github.com/gridplatform/grid-core) | Chạy Grid trên máy bạn — động cơ phía sau và cách cài đặt |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | Trang web bạn dùng trong trình duyệt |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | Cùng công việc từ dòng lệnh, không cần mở trang web |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Các khối sẵn cho tài nguyên đám mây phổ biến (mạng, máy chủ, …) |
+| [grid-config](https://github.com/gridplatform/grid-config) | Cấu hình mẫu để học — **không** phải setup thật của bạn (hãy tạo repository riêng) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Hướng dẫn viết bằng lời dễ hiểu |
 
 Xong / đang làm / kế hoạch: **[STATUS.md](../../STATUS.md)**.
 
