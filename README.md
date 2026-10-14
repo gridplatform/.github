@@ -1,6 +1,6 @@
 # Grid Platform Organization
 
-Metadata for **[gridplatform](https://github.com/gridplatform)**. This repo is not the product install guide.
+Metadata for **[gridplatform](https://github.com/gridplatform)**. This repository is not the product install guide.
 
 | Path | Purpose |
 |------|---------|

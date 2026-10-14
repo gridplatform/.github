@@ -2,7 +2,7 @@
 
 > **Note (2026):** These files are **historical planning notes** from early design.
 > They are not the live product roadmap. For install and current docs, use
-> **[grid-docs](https://github.com/gridplatform/grid-docs)**. Public product repos
+> **[grid-docs](https://github.com/gridplatform/grid-docs)**. Public product repositories
 > (core / ui / cli / config / terraform / docs) are active; operator and ML remain planned.
 
 **Goal:** Comprehensive development roadmap and methodology for building the Grid Platform
@@ -66,8 +66,8 @@ This directory contains detailed development plans, methodologies, and best prac
 4. **Test end-to-end** - Deploy VPC → Subnet → VMs
 
 ### For 4-6 Month MVP
-1. **Follow repository-specific plans** - Each repo has 8-week phases
-2. **Use development methodology** - Consistent practices across all repos
+1. **Follow repository-specific plans** - Each repository has 8-week phases
+2. **Use development methodology** - Consistent practices across all repositories
 3. **Monitor success metrics** - Track progress against defined KPIs
 4. **Manage risks proactively** - Use risk management strategies
 

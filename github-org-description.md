@@ -23,7 +23,7 @@ Grid Platform is a community-driven Infrastructure Orchestration Platform. Run t
 - **No vendor lock-in** — plain Terraform exit path via `archive/`
 - **Docs-first install** — grid-docs
 
-## Public product repos (install surface)
+## Public product repositories (install surface)
 - **grid-core** — API + `install/` (Compose, `install.sh`, systemd)
 - **grid-ui** — Console
 - **grid-cli** — Generate / plan / apply / destroy
@@ -37,7 +37,7 @@ Grid Platform is a community-driven Infrastructure Orchestration Platform. Run t
 
 ## Community Links
 - **GitHub Discussions** — Q&A and proposals
-- **Issues** — Bugs and features on each repo
+- **Issues** — Bugs and features on each repository
 - **Website** — https://gridplatform.org
 
 ## License

@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid transforme du JSON d’infra en forme de chemin en Terraform via une banque de modules publique, exécute **plan / apply / destroy** en **releases** auditées, et fournit une console style GitOps. Auto-hébergez sur une VM ou avec Docker Compose — sans verrouillage fournisseur, sortie Terraform pure.
+Grid vous aide à **demander, revoir et exécuter votre infrastructure cloud vous-même** — sans enfermer votre setup dans le produit d’un autre. Vous décrivez ce que vous voulez, approuvez les changements avec un historique clair, et gardez l’accès et les traces sur des machines et un stockage sous **votre** contrôle.
 
 > **Vidéo démo** — bientôt.
 
@@ -55,31 +55,29 @@ Parcours complet : **[Installer sur une VM](https://github.com/gridplatform/grid
 
 ## Fonctionnement
 
-| Élément | Rôle |
-|-------|------|
-| **Votre** dépôt d’état désiré | Un dépôt GitHub que **vous** créez — JSON de ce que vous déployez |
-| Banque de modules | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API, sync GitOps, releases + logs live |
-| grid-ui | Console |
+Grid est l’endroit où votre équipe **demande des ressources cloud** et **voit ce qui a vraiment changé**.
 
-Les permissions cloud viennent de l’**identité de l’hôte** (rôle d’instance AWS / ADC GCP). Les fichiers d’état désiré ne portent pas de secrets. La production utilise l’état distant pour qu’une VM remplacée ne perde pas la carte Terraform.
+Vous écrivez ce que vous voulez — un réseau, un serveur, une base — dans des fichiers de config d’un dépôt GitHub qui **vous** appartient. Grid lit cette description, montre un plan de ce qui changerait et, quand vous approuvez, crée ou supprime ces ressources dans votre cloud. Chaque changement est enregistré comme une release avec des logs en direct, pour que d’autres puissent suivre et regarder plus tard.
+
+Vous faites tourner Grid sur du matériel sous **votre** contrôle. L’accès cloud reste lié à l’identité de cette machine — vos configs n’ont pas besoin de mots de passe ou de clés à l’intérieur. Si la machine est remplacée plus tard, le suivi de ce que Grid gère reste dans le stockage distant que vous avez mis en place une fois.
+
+En bref : dites ce que vous voulez, revoyez le plan, appliquez avec une trace digne de confiance.
 
 ## Votre état désiré
 
-**[grid-config](https://github.com/gridplatform/grid-config) n’est qu’un exemple.** Lisez-le pour la forme du JSON. Ne le **forkez pas** pour la production.
+**[grid-config](https://github.com/gridplatform/grid-config) n’est qu’un exemple.** Utilisez-le pour voir à quoi ressemblent les configs. Ne le **forkez pas** pour votre vrai environnement.
 
-Pour un vrai déploiement :
+Pour votre propre setup :
 
 1. Créez un **nouveau** dépôt GitHub sous votre org ou compte.
-2. Ajoutez votre propre JSON en forme de chemin (provider / env / unités de ressource).
-3. Pointez Grid vers ce dépôt (`GRID_GITOPS_REPO_URL`) — pas vers `grid-config`.
+2. Mettez-y vos propres fichiers de config (ce que vous voulez dans chaque environnement).
+3. Pointez Grid vers **ce** dépôt — pas vers `grid-config`.
 
-Copiez les motifs de l’exemple ; le dépôt et les réglages vous appartiennent.
+Reprenez des idées de l’exemple ; gardez la propriété du dépôt et des réglages.
 
 ## Dépôts
 
-| Repo | Rôle |
+| Repository | Rôle |
 |------|------|
 | [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | Console |

@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid 將路徑形基礎建設 JSON 透過公共模組庫轉為 Terraform，以可稽核的 **release** 執行 **plan / apply / destroy**，並提供 GitOps 風格控制台。在 VM 或 Docker Compose 上自託管 — 無廠商鎖定，可走純 Terraform 退出路徑。
+Grid 協助你**自己提出、審閱並執行雲端基礎建設** — 不必把整套設定鎖進別人的產品裡。你描述想要什麼，帶著清楚歷史核准變更，存取權限與紀錄都留在**你**控制的機器與儲存上。
 
 > **示範影片** — 即將推出。
 
@@ -55,27 +55,25 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 ## 運作方式
 
-| 元件 | 用途 |
-|-------|------|
-| **你的**期望狀態倉庫 | 你自己建立的 GitHub 倉庫 — 存放要部署的 JSON |
-| 模組庫 | Terraform 模組（[grid-terraform](https://github.com/gridplatform/grid-terraform)） |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API、GitOps 同步、release + 即時日誌 |
-| grid-ui | 主控台 |
+Grid 是團隊用來**申請雲端資源**並**看清楚實際改了什麼**的地方。
 
-雲端權限來自 **主機身分**（AWS 執行個體角色 / GCP ADC）。期望狀態檔案不攜帶憑證。正式環境使用遠端狀態，更換 VM 也不會遺失 Terraform 對應。
+你把想要的東西寫下來 — 網路、伺服器、資料庫 — 放進**你自己**的 GitHub 倉庫裡的設定檔。Grid 讀取這些描述，顯示一份會改動什麼的計畫；你核准後，就在你的雲端建立或移除這些資源。每次變更都存成帶即時日誌的發布紀錄，別人可以跟著看，也可以事後回看。
+
+你在**自己**控制的機器上執行 Grid。雲端存取權限留在那台機器的身分上 — 設定檔裡不需要密碼或金鑰。如果之後換了機器，Grid 管理過什麼的紀錄仍留在你當初設好的遠端儲存裡。
+
+一句話：說出你要什麼，審閱計畫，帶著可信的軌跡去執行。
 
 ## 你的期望狀態
 
-**[grid-config](https://github.com/gridplatform/grid-config) 僅供範例。** 閱讀它以了解 JSON 結構。**不要**為正式環境 fork 它。
+**[grid-config](https://github.com/gridplatform/grid-config) 僅供範例。** 用它了解設定長什麼樣子。**不要**為真實環境 fork 它。
 
-對於真實部署：
+你自己的用法：
 
 1. 在你的組織或帳號下 **新建** GitHub 倉庫。
-2. 加入你自己的路徑形 JSON（provider / env / 資源單元）。
-3. 讓 Grid 指向該倉庫（`GRID_GITOPS_REPO_URL`）— 而不是 `grid-config`。
+2. 放入你自己的設定檔（每個環境想要什麼）。
+3. 讓 Grid 指向**那個**倉庫 — 而不是 `grid-config`。
 
-從範例複製模式；倉庫與設定歸你所有。
+可以從範例借鏡想法；倉庫與設定歸你所有。
 
 ## 倉庫
 

@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid biến JSON hạ tầng dạng đường dẫn thành Terraform qua ngân hàng module công khai, chạy **plan / apply / destroy** như **release** có kiểm toán, và cung cấp console kiểu GitOps. Tự host trên VM hoặc Docker Compose — không khóa nhà cung cấp, thoát bằng Terraform thuần.
+Grid giúp bạn **tự yêu cầu, xem lại và chạy hạ tầng đám mây** — không khóa setup vào sản phẩm của người khác. Bạn mô tả điều muốn có, duyệt thay đổi với lịch sử rõ ràng, và giữ quyền truy cập cùng hồ sơ trên máy móc và lưu trữ do **bạn** kiểm soát.
 
 > **Video demo** — sắp ra mắt.
 
@@ -55,31 +55,29 @@ Mở `http://<host>/`. Ưu tiên **instance role / service account** trên VM th
 
 ## Cách hoạt động
 
-| Thành phần | Vai trò |
-|-------|------|
-| Repo desired-state **của bạn** | Repo GitHub **bạn** tạo — JSON những gì bạn deploy |
-| Ngân hàng module | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API, đồng bộ GitOps, release + log trực tiếp |
-| grid-ui | Console |
+Grid là nơi nhóm bạn **xin tài nguyên đám mây** và **xem thực sự đã thay đổi gì**.
 
-Quyền cloud đến từ **danh tính host** (AWS instance role / GCP ADC). File desired-state không chứa credentials. Production dùng remote state để VM thay thế không mất bản đồ Terraform.
+Bạn viết những gì muốn — mạng, máy chủ, cơ sở dữ liệu — vào các tệp cấu hình trong repository GitHub do **bạn** sở hữu. Grid đọc mô tả đó, hiện kế hoạch những gì sẽ đổi, và khi bạn duyệt thì tạo hoặc xóa các tài nguyên đó trên đám mây của bạn. Mọi thay đổi được lưu thành một release kèm log trực tiếp để người khác theo dõi và xem lại sau.
+
+Bạn chạy Grid trên phần cứng do **bạn** kiểm soát. Quyền truy cập đám mây gắn với danh tính máy đó — tệp cấu hình không cần mật khẩu hay khóa bên trong. Nếu sau này thay máy, hồ sơ về những gì Grid quản lý vẫn nằm ở kho lưu trữ từ xa bạn đã thiết lập một lần.
+
+Tóm lại: nói rõ bạn muốn gì, xem kế hoạch, áp dụng với dấu vết đáng tin.
 
 ## Desired state của bạn
 
-**[grid-config](https://github.com/gridplatform/grid-config) chỉ là ví dụ.** Đọc để học hình dạng JSON. **Không** fork cho production.
+**[grid-config](https://github.com/gridplatform/grid-config) chỉ là ví dụ.** Dùng để xem cấu hình trông thế nào. **Không** fork cho môi trường thật.
 
-Để deploy thật:
+Cho setup của bạn:
 
-1. Tạo repo GitHub **mới** dưới org hoặc tài khoản của bạn.
-2. Thêm JSON dạng đường dẫn của bạn (provider / env / đơn vị tài nguyên).
-3. Trỏ Grid tới repo đó (`GRID_GITOPS_REPO_URL`) — không phải `grid-config`.
+1. Tạo repository GitHub **mới** dưới org hoặc tài khoản của bạn.
+2. Đặt các tệp cấu hình của bạn vào đó (muốn gì ở mỗi môi trường).
+3. Trỏ Grid tới **repository đó** — không phải `grid-config`.
 
-Sao chép mẫu từ ví dụ; repo và cấu hình thuộc về bạn.
+Mượn ý từ ví dụ; giữ quyền sở hữu repository và cài đặt.
 
 ## Kho mã
 
-| Repo | Vai trò |
+| Repository | Vai trò |
 |------|------|
 | [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | Console |
@@ -102,7 +100,7 @@ Xong / đang làm / kế hoạch: **[STATUS.md](../../STATUS.md)**.
 
 ## Đóng góp
 
-Fork repo **sản phẩm** (core, ui, cli, terraform, docs) → nhánh → PR vào `main`.  
+Fork repository **sản phẩm** (core, ui, cli, terraform, docs) → nhánh → PR vào `main`.  
 Đừng coi `grid-config` là nhà desired-state riêng.
 
 See [grid-docs CONTRIBUTING](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md).

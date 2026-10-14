@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid turns path-shaped infrastructure JSON into Terraform via a public module bank, runs **plan / apply / destroy** as audited **releases**, and ships a console for GitOps-style desired state. You self-host on a VM or with Docker Compose — no vendor lock-in, plain Terraform exit path.
+Grid helps you **request, review, and run cloud infrastructure yourself** — without locking your setup into someone else’s product. You describe what you want, approve changes with a clear history, and keep access and records on machines and storage **you** control.
 
 > **Demo video** — coming soon.
 
@@ -57,31 +57,29 @@ Full path: **[Install on a VM](https://github.com/gridplatform/grid-docs/blob/ma
 
 ## How it works
 
-| Piece | Role |
-|-------|------|
-| **Your** desired-state repo | GitHub repo you create — JSON for what you deploy |
-| Module bank | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API, GitOps sync, releases + live logs |
-| grid-ui | Console |
+Grid is where your team goes to **ask for cloud resources** and **see what actually changed**.
 
-Cloud permissions come from the **host identity** (AWS instance role / GCP ADC). Desired-state files do not carry credentials. Production uses remote state so a replaced VM does not lose the Terraform map.
+You write down what you want — a network, a server, a database — in config files stored in a GitHub repository **you** own. Grid reads that description, shows a plan of what would change, and when you approve, creates or removes those resources in your cloud. Every change is saved as a release with live logs, so people can follow along and look back later.
+
+You run Grid on hardware **you** control. Cloud access stays with that machine’s identity — your config files do not need passwords or keys inside them. If the machine is replaced later, the record of what Grid manages still lives in remote storage you set up once.
+
+In short: say what you want, review the plan, apply with a trail you can trust.
 
 ## Your desired state
 
-**[grid-config](https://github.com/gridplatform/grid-config) is an example only.** Read it to learn the JSON shape. Do **not** fork it for production.
+**[grid-config](https://github.com/gridplatform/grid-config) is an example only.** Use it to see how configs look. Do **not** fork it for your real environment.
 
-For a real deploy:
+For your own setup:
 
 1. Create a **new** GitHub repository under your org or account.
-2. Add your own path-shaped JSON (provider / env / resource units).
-3. Point Grid at that repo (`GRID_GITOPS_REPO_URL`) — not at `grid-config`.
+2. Put your own config files there (what you want in each environment).
+3. Point Grid at **that** repository — not at `grid-config`.
 
-Copy patterns from the example; own the repo and the settings.
+Copy ideas from the example; keep ownership of the repository and the settings.
 
 ## Repositories
 
-| Repo | Role |
+| Repository | Role |
 |------|------|
 | [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | Console |
@@ -104,7 +102,7 @@ Done / in progress / planned: **[STATUS.md](../STATUS.md)**.
 
 ## Contributing
 
-Fork a **product** repo (core, ui, cli, terraform, docs) → branch → PR against `main`.  
+Fork a **product** repository (core, ui, cli, terraform, docs) → branch → PR against `main`.  
 Do not treat `grid-config` as your private desired-state home.
 
 See [grid-docs CONTRIBUTING](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md).

@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid는 경로형 인프라 JSON을 공개 모듈 뱅크를 통해 Terraform으로 바꾸고, 감사 가능한 **release**로 **plan / apply / destroy**를 실행하며 GitOps 스타일 콘솔을 제공합니다. VM 또는 Docker Compose로 셀프호스트 — 벤더 종속성 없음, 순수 Terraform으로 이탈 가능.
+Grid는 **클라우드 인프라를 직접 요청·검토·실행**하도록 돕습니다. 설정을 다른 제품에 가두지 않습니다. 원하는 것을 적고, 이력이 남는 변경을 승인하며, 접근과 기록은 **당신**이 통제하는 장비와 저장소에 둡니다.
 
 > **데모 영상** — 곧 공개.
 
@@ -55,31 +55,29 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 ## 동작 방식
 
-| 구성 | 역할 |
-|-------|------|
-| **당신의** desired-state 저장소 | 직접 만든 GitHub 저장소 — 배포할 JSON |
-| 모듈 뱅크 | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API, GitOps 동기화, 릴리스 + 실시간 로그 |
-| grid-ui | 콘솔 |
+Grid는 팀이 **클라우드 자원을 요청**하고 **실제로 무엇이 바뀌었는지 보는** 곳입니다.
 
-클라우드 권한은 **호스트 ID**(AWS 인스턴스 역할 / GCP ADC)에서 옵니다. desired-state 파일에 자격 증명을 넣지 않습니다. 프로덕션은 원격 상태를 사용해 VM을 교체해도 Terraform 맵을 잃지 않습니다.
+네트워크, 서버, 데이터베이스 등 원하는 것을 **당신 소유의** GitHub 저장소 설정 파일에 적습니다. Grid가 그 설명을 읽고 무엇이 바뀔지 계획을 보여 주며, 승인하면 당신 클라우드에서 만들거나 지웁니다. 모든 변경은 실시간 로그가 있는 릴리스로 남아, 따라보거나 나중에 다시 볼 수 있습니다.
+
+Grid는 **당신이** 통제하는 장비에서 돌아갑니다. 클라우드 접근은 그 장비의 신원에 머물며 — 설정 파일에 비밀번호나 키를 넣을 필요가 없습니다. 나중에 장비를 바꿔도, Grid가 관리하는 것의 기록은 처음에 마련한 원격 저장소에 남습니다.
+
+한 줄로: 원하는 것을 말하고, 계획을 검토하고, 믿을 수 있는 이력과 함께 적용하세요.
 
 ## 당신의 desired state
 
-**[grid-config](https://github.com/gridplatform/grid-config)는 예시일 뿐입니다.** JSON 형태를 배우려면 읽으세요. 프로덕션용으로 **fork 하지 마세요**.
+**[grid-config](https://github.com/gridplatform/grid-config)는 예시일 뿐입니다.** 설정이 어떻게 생겼는지 보는 용도입니다. 실제 환경용으로 **fork 하지 마세요**.
 
-실제 배포 시:
+당신 환경에서는:
 
 1. 조직/계정에 **새** GitHub 저장소를 만듭니다.
-2. 자신의 경로형 JSON을 추가합니다 (provider / env / 리소스 단위).
-3. Grid를 그 저장소로 가리킵니다 (`GRID_GITOPS_REPO_URL`) — `grid-config`가 아닙니다.
+2. 자신의 설정 파일을 넣습니다 (환경마다 원하는 것).
+3. Grid를 **그** 저장소로 가리킵니다 — `grid-config`가 아닙니다.
 
-예시에서 패턴을 복사하고, 저장소와 설정은 직접 소유하세요.
+예시에서 아이디어를 빌리고, 저장소와 설정은 직접 소유하세요.
 
 ## 저장소
 
-| Repo | 역할 |
+| Repository | 역할 |
 |------|------|
 | [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | 콘솔 |

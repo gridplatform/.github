@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid, yol biçimli altyapı JSON’unu genel bir modül bankası üzerinden Terraform’a dönüştürür, **plan / apply / destroy** işlemlerini denetlenebilir **release** olarak çalıştırır ve GitOps tarzı bir konsol sunar. VM veya Docker Compose ile self-host — satıcı kilidi yok, düz Terraform çıkışı.
+Grid, bulut altyapısını **kendiniz istemenize, gözden geçirmenize ve çalıştırmanıza** yardımcı olur — kurulumunuzu başkasının ürününe kilitlemeden. Ne istediğinizi anlatır, net bir geçmişle değişiklikleri onaylar, erişim ve kayıtları **sizin** kontrolünüzdeki makinelerde ve depolamada tutarsınız.
 
 > **Demo videosu** — yakında.
 
@@ -55,31 +55,29 @@ Tam yol: **[VM’e kurulum](https://github.com/gridplatform/grid-docs/blob/main/
 
 ## Nasıl çalışır
 
-| Parça | Rol |
-|-------|------|
-| **Sizin** desired-state deponuz | **Sizin** oluşturduğunuz GitHub deposu — ne deploy edeceğinizin JSON’u |
-| Modül bankası | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API, GitOps senkronu, release + canlı loglar |
-| grid-ui | Konsol |
+Grid, ekibinizin **bulut kaynakları istemek** ve **gerçekte neyin değiştiğini görmek** için gittiği yerdir.
 
-Bulut izinleri **host kimliğinden** gelir (AWS instance role / GCP ADC). Desired-state dosyaları kimlik bilgisi taşımaz. Üretim uzak state kullanır; VM değişince Terraform haritası kaybolmaz.
+İstediğinizi — ağ, sunucu, veritabanı — **size ait** bir GitHub deposundaki yapılandırma dosyalarına yazarsınız. Grid bu açıklamayı okur, neyin değişeceğinin planını gösterir; onayladığınızda bunları bulutunuzda oluşturur veya kaldırır. Her değişiklik canlı log’lu bir release olarak kaydedilir; başkaları takip edebilir, sonra geri bakabilir.
+
+Grid’i **sizin** kontrolünüzdeki donanımda çalıştırırsınız. Bulut erişimi o makinenin kimliğinde kalır — yapılandırma dosyalarının içinde parola veya anahtar olması gerekmez. Makine sonra değiştirilirse, Grid’in yönettiği şeylerin kaydı bir kez kurduğunuz uzak depolamada kalır.
+
+Kısaca: ne istediğinizi söyleyin, planı gözden geçirin, güvenebileceğiniz bir izle uygulayın.
 
 ## Desired state’iniz
 
-**[grid-config](https://github.com/gridplatform/grid-config) yalnızca örnektir.** JSON şeklini öğrenmek için okuyun. Üretim için **fork etmeyin**.
+**[grid-config](https://github.com/gridplatform/grid-config) yalnızca örnektir.** Yapılandırmaların nasıl göründüğünü görmek için kullanın. Gerçek ortamınız için **fork etmeyin**.
 
-Gerçek bir deploy için:
+Kendi kurulumunuz için:
 
 1. Org veya hesabınızda **yeni** bir GitHub deposu oluşturun.
-2. Kendi yol biçimli JSON’unuzu ekleyin (provider / env / kaynak birimleri).
-3. Grid’i o depoya yönlendirin (`GRID_GITOPS_REPO_URL`) — `grid-config`’e değil.
+2. Kendi yapılandırma dosyalarınızı koyun (her ortamda ne istediğiniz).
+3. Grid’i **o** depoya yönlendirin — `grid-config`’e değil.
 
-Örnekten kalıpları kopyalayın; depo ve ayarlar size aittir.
+Örnekten fikir alın; deponun ve ayarların sahibi siz olun.
 
 ## Depolar
 
-| Repo | Rol |
+| Repository | Rol |
 |------|------|
 | [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | Konsol |

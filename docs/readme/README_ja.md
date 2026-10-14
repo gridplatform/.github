@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid はパス形式のインフラ JSON を公開モジュールバンク経由で Terraform に変換し、監査可能な **release** として **plan / apply / destroy** を実行し、GitOps スタイルのコンソールを提供します。VM または Docker Compose でセルフホスト — ベンダーロックインなし、素の Terraform で退出可能。
+Grid は、**自分でクラウド基盤を依頼・確認・実行する**ための仕組みです。設定を他社製品に閉じ込めません。欲しいものを記述し、履歴のわかる変更を承認し、アクセスと記録は**あなた**が管理するマシンとストレージに置きます。
 
 > **デモ動画** — 近日公開。
 
@@ -55,31 +55,29 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 ## 仕組み
 
-| 要素 | 役割 |
-|-------|------|
-| **あなたの** desired-state リポジトリ | あなたが作る GitHub リポジトリ — デプロイ内容の JSON |
-| モジュールバンク | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API、GitOps 同期、リリース + ライブログ |
-| grid-ui | コンソール |
+Grid は、チームが**クラウド資源を依頼し**、**実際に何が変わったかを見る**場所です。
 
-クラウド権限は **ホストの ID**（AWS インスタンスロール / GCP ADC）から来ます。desired-state に認証情報は含めません。本番はリモート状態を使い、VM を置き換えても Terraform の対応関係を失いません。
+ネットワーク、サーバー、データベースなど、欲しいものを**あなた自身の** GitHub リポジトリの設定ファイルに書きます。Grid がその説明を読み、何が変わるかの計画を示し、あなたが承認すると、あなたのクラウド上で作成や削除を行います。変更は毎回、ライブログ付きのリリースとして残り、追ったり後から見返したりできます。
+
+Grid は**あなたが**管理するマシンで動かします。クラウドへの権限はそのマシンの身分にあり — 設定ファイルにパスワードや鍵を入れる必要はありません。あとでマシンを替えても、Grid が管理しているものの記録は、一度用意したリモート保存先に残ります。
+
+要するに：欲しいものを書き、計画を確認し、信頼できる履歴付きで適用する。
 
 ## あなたの desired state
 
-**[grid-config](https://github.com/gridplatform/grid-config) はあくまで例です。** JSON の形を学ぶために読んでください。本番用に **fork しないでください**。
+**[grid-config](https://github.com/gridplatform/grid-config) はあくまで例です。** 設定の見た目を知るために使ってください。本番用に **fork しないでください**。
 
-本番デプロイでは：
+自分の環境では：
 
 1. 自分の org / アカウントに **新しい** GitHub リポジトリを作る。
-2. 自分のパス形式 JSON を追加する（provider / env / リソース単位）。
-3. Grid をそのリポジトリに向ける（`GRID_GITOPS_REPO_URL`）— `grid-config` ではない。
+2. 自分の設定ファイルを置く（各環境で欲しいもの）。
+3. Grid を**その**リポジトリに向ける — `grid-config` ではない。
 
-例からパターンをコピーし、リポジトリと設定は自分で所有する。
+例からアイデアを借り、リポジトリと設定は自分で所有する。
 
 ## リポジトリ
 
-| Repo | 役割 |
+| Repository | 役割 |
 |------|------|
 | [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | コンソール |

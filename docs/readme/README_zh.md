@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid 将路径形基础设施 JSON 通过公共模块库转为 Terraform，以可审计的 **release** 运行 **plan / apply / destroy**，并提供 GitOps 风格控制台。在 VM 或 Docker Compose 上自托管 — 无厂商锁定，可走纯 Terraform 退出路径。
+Grid 帮你**自己提出、审阅并运行云基础设施** — 不必把整套配置锁进别人的产品里。你描述想要什么，带着清晰历史批准变更，访问权限和记录都留在**你**控制的机器与存储上。
 
 > **演示视频** — 即将推出。
 
@@ -55,27 +55,25 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 ## 工作原理
 
-| 组件 | 作用 |
-|-------|------|
-| **你的**期望状态仓库 | 你自己创建的 GitHub 仓库 — 存放要部署的 JSON |
-| 模块库 | Terraform 模块（[grid-terraform](https://github.com/gridplatform/grid-terraform)） |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API、GitOps 同步、release + 实时日志 |
-| grid-ui | 控制台 |
+Grid 是团队用来**申请云资源**并**看清实际改了什么**的地方。
 
-云权限来自 **主机身份**（AWS 实例角色 / GCP ADC）。期望状态文件不携带凭证。生产环境使用远程状态，更换 VM 也不会丢失 Terraform 映射。
+你把想要的东西写下来 — 网络、服务器、数据库 — 放进**你自己**的 GitHub 仓库里的配置文件。Grid 读取这些描述，展示一份会改动什么的计划；你批准后，就在你的云里创建或删除这些资源。每次变更都保存为带实时日志的发布记录，别人可以跟着看，也可以事后回看。
+
+你在**自己**控制的机器上运行 Grid。云访问权限留在那台机器的身份上 — 配置文件里不需要密码或密钥。如果以后换了机器，Grid 管理过什么的记录仍留在你当初设好的远程存储里。
+
+一句话：说出你要什么，审阅计划，带着可信的轨迹去执行。
 
 ## 你的期望状态
 
-**[grid-config](https://github.com/gridplatform/grid-config) 仅作示例。** 阅读它以了解 JSON 结构。**不要**为生产环境 fork 它。
+**[grid-config](https://github.com/gridplatform/grid-config) 仅作示例。** 用它了解配置长什么样。**不要**为真实环境 fork 它。
 
-对于真实部署：
+你自己的用法：
 
 1. 在你的组织或账号下 **新建** GitHub 仓库。
-2. 写入你自己的路径形 JSON（provider / env / 资源单元）。
-3. 让 Grid 指向该仓库（`GRID_GITOPS_REPO_URL`）— 而不是 `grid-config`。
+2. 把你自己的配置文件放进去（每个环境想要什么）。
+3. 让 Grid 指向**那个**仓库 — 而不是 `grid-config`。
 
-从示例复制模式；仓库和配置归你所有。
+可以从示例里借鉴想法；仓库和设置归你所有。
 
 ## 仓库
 

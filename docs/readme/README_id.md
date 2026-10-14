@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid mengubah JSON infrastruktur berbentuk path menjadi Terraform lewat bank modul publik, menjalankan **plan / apply / destroy** sebagai **release** yang diaudit, dan menyediakan konsol bergaya GitOps. Self-host di VM atau Docker Compose — tanpa vendor lock-in, keluar lewat Terraform murni.
+Grid membantu Anda **meminta, meninjau, dan menjalankan infrastruktur cloud sendiri** — tanpa mengunci setup ke produk orang lain. Anda menjelaskan apa yang diinginkan, menyetujui perubahan dengan riwayat yang jelas, dan menyimpan akses serta catatan di mesin dan penyimpanan di bawah kendali **Anda**.
 
 > **Video demo** — segera hadir.
 
@@ -55,31 +55,29 @@ Jalur lengkap: **[Pasang di VM](https://github.com/gridplatform/grid-docs/blob/m
 
 ## Cara kerja
 
-| Bagian | Peran |
-|-------|------|
-| Repo desired-state **Anda** | Repo GitHub yang **Anda** buat — JSON yang Anda deploy |
-| Bank modul | Terraform modules ([grid-terraform](https://github.com/gridplatform/grid-terraform)) |
-| grid-cli | Generate → plan → apply → destroy |
-| grid-core | API, sinkron GitOps, release + log langsung |
-| grid-ui | Konsol |
+Grid adalah tempat tim Anda **meminta sumber daya cloud** dan **melihat apa yang benar-benar berubah**.
 
-Izin cloud datang dari **identitas host** (AWS instance role / GCP ADC). File desired-state tidak membawa kredensial. Produksi memakai remote state agar VM pengganti tidak kehilangan peta Terraform.
+Anda menuliskan apa yang diinginkan — jaringan, server, basis data — dalam file konfigurasi di repository GitHub yang **Anda** miliki. Grid membaca deskripsi itu, menampilkan rencana perubahan, dan saat Anda setujui, membuat atau menghapus sumber daya itu di cloud Anda. Setiap perubahan disimpan sebagai release dengan log langsung agar orang lain bisa mengikuti dan melihat lagi nanti.
+
+Anda menjalankan Grid di perangkat keras di bawah kendali **Anda**. Akses cloud tetap pada identitas mesin itu — file konfigurasi tidak perlu memuat kata sandi atau kunci. Jika mesin diganti nanti, catatan tentang apa yang dikelola Grid tetap ada di penyimpanan jarak jauh yang Anda siapkan sekali.
+
+Singkatnya: katakan apa yang Anda mau, tinjau rencana, terapkan dengan jejak yang bisa dipercaya.
 
 ## Desired state Anda
 
-**[grid-config](https://github.com/gridplatform/grid-config) hanya contoh.** Baca untuk mempelajari bentuk JSON. **Jangan** fork untuk produksi.
+**[grid-config](https://github.com/gridplatform/grid-config) hanya contoh.** Gunakan untuk melihat bentuk konfigurasi. **Jangan** fork untuk lingkungan nyata Anda.
 
-Untuk deploy sungguhan:
+Untuk setup Anda sendiri:
 
 1. Buat repositori GitHub **baru** di org atau akun Anda.
-2. Tambahkan JSON berbentuk path milik Anda (provider / env / unit sumber daya).
-3. Arahkan Grid ke repo itu (`GRID_GITOPS_REPO_URL`) — bukan ke `grid-config`.
+2. Taruh file konfigurasi Anda sendiri di sana (apa yang Anda inginkan di tiap lingkungan).
+3. Arahkan Grid ke **repository itu** — bukan ke `grid-config`.
 
-Salin pola dari contoh; repo dan pengaturan milik Anda.
+Pinjam ide dari contoh; tetap miliki repository dan pengaturannya.
 
 ## Repositori
 
-| Repo | Peran |
+| Repository | Peran |
 |------|------|
 | [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
 | [grid-ui](https://github.com/gridplatform/grid-ui) | Konsol |
@@ -102,7 +100,7 @@ Selesai / berlangsung / direncanakan: **[STATUS.md](../../STATUS.md)**.
 
 ## Kontribusi
 
-Fork repo **produk** (core, ui, cli, terraform, docs) → cabang → PR ke `main`.  
+Fork repository **produk** (core, ui, cli, terraform, docs) → cabang → PR ke `main`.  
 Jangan anggap `grid-config` sebagai rumah desired-state pribadi.
 
 See [grid-docs CONTRIBUTING](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md).
