@@ -8,7 +8,7 @@
 
 **Dành cho doanh nghiệp triển khai và quản lý hạ tầng — với quyền kiểm soát vẫn thuộc về bạn.**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
@@ -109,4 +109,6 @@ Issues: [grid-core](https://github.com/gridplatform/grid-core/issues).
 
 ## Giấy phép
 
-MIT — see each repository’s `LICENSE`.
+[MIT](../../LICENSE) © 2026 Grid Platform.
+
+Các repository sản phẩm (grid-core, grid-ui, grid-cli, …) cũng có `LICENSE` riêng với cùng điều khoản.

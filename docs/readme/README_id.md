@@ -8,7 +8,7 @@
 
 **Dibangun agar perusahaan dapat men-deploy dan mengelola infrastruktur — dengan kontrol yang tetap milik Anda.**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
@@ -109,4 +109,6 @@ Issues: [grid-core](https://github.com/gridplatform/grid-core/issues).
 
 ## Lisensi
 
-MIT — see each repository’s `LICENSE`.
+[MIT](../../LICENSE) © 2026 Grid Platform.
+
+Repositori produk (grid-core, grid-ui, grid-cli, dll.) memiliki `LICENSE` sendiri dengan ketentuan yang sama.

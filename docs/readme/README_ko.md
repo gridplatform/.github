@@ -8,7 +8,7 @@
 
 **기업이 인프라를 배포·운영하도록 — 통제권은 당신 곁에.**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
@@ -109,4 +109,6 @@ See [grid-docs CONTRIBUTING](https://github.com/gridplatform/grid-docs/blob/main
 
 ## 라이선스
 
-MIT — see each repository’s `LICENSE`.
+[MIT](../../LICENSE) © 2026 Grid Platform.
+
+제품 저장소(grid-core, grid-ui, grid-cli 등)도 동일한 조건의 `LICENSE`를 가집니다.

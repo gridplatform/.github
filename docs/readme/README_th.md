@@ -8,7 +8,7 @@
 
 **สร้างขึ้นให้องค์กรติดตั้งและจัดการโครงสร้างพื้นฐาน — โดยยังถือสิทธิ์ควบคุมไว้เอง**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
@@ -109,4 +109,6 @@ Issues: [grid-core](https://github.com/gridplatform/grid-core/issues)
 
 ## สัญญาอนุญาต
 
-MIT — see each repository’s `LICENSE`.
+[MIT](../../LICENSE) © 2026 Grid Platform
+
+รีโปผลิตภัณฑ์ (grid-core, grid-ui, grid-cli ฯลฯ) มี `LICENSE` ของตนเองภายใต้เงื่อนไขเดียวกัน
