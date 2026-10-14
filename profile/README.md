@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### Self-hosted infrastructure orchestration — desired-state JSON, Terraform modules, audited releases.
+### The self-hosted infrastructure orchestration platform.
 
-**Your control plane. Your credentials. Your state.**
+**Built for enterprises to deploy and manage infrastructure — with control that stays yours.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid helps you **request, review, and run cloud infrastructure yourself** — without locking your setup into someone else’s product. You describe what you want, approve changes with a clear history, and keep access and records on machines and storage **you** control.
+Grid is a **self-hosted** platform for deploying and running cloud infrastructure. Enterprises use it to keep ownership of how things are rolled out, who can change them, and where access lives — without handing that control to another vendor’s cloud console.
 
 > **Demo video** — coming soon.
 

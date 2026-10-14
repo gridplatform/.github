@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### Kendi barındırdığınız altyapı orkestrasyonu — desired-state JSON, Terraform modülleri, denetlenebilir release’ler.
+### Self-hosted altyapı orkestrasyon platformu.
 
-**Kontrol düzleminiz. Kimlik bilgileriniz. State’iniz.**
+**Kurumların altyapıyı dağıtıp yönetmesi için — kontrol sizde kalsın diye.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid, bulut altyapısını **kendiniz istemenize, gözden geçirmenize ve çalıştırmanıza** yardımcı olur — kurulumunuzu başkasının ürününe kilitlemeden. Ne istediğinizi anlatır, net bir geçmişle değişiklikleri onaylar, erişim ve kayıtları **sizin** kontrolünüzdeki makinelerde ve depolamada tutarsınız.
+Grid, bulut altyapısını dağıtmak ve işletmek için **self-hosted** bir platformdur. Kurumlar nasıl yayınlandığını, kimin değiştirebileceğini ve erişimin nerede durduğunu kendilerinde tutar — bu kontrolü başka bir sağlayıcının konsoluna vermeden.
 
 > **Demo videosu** — yakında.
 

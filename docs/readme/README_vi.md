@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### Điều phối hạ tầng tự lưu trữ — JSON trạng thái mong muốn, module Terraform, release có kiểm toán.
+### Nền tảng điều phối hạ tầng tự lưu trữ.
 
-**Control plane của bạn. Thông tin xác thực của bạn. State của bạn.**
+**Dành cho doanh nghiệp triển khai và quản lý hạ tầng — với quyền kiểm soát vẫn thuộc về bạn.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid giúp bạn **tự yêu cầu, xem lại và chạy hạ tầng đám mây** — không khóa setup vào sản phẩm của người khác. Bạn mô tả điều muốn có, duyệt thay đổi với lịch sử rõ ràng, và giữ quyền truy cập cùng hồ sơ trên máy móc và lưu trữ do **bạn** kiểm soát.
+Grid là nền tảng **tự lưu trữ** để triển khai và vận hành hạ tầng đám mây. Doanh nghiệp dùng nó để giữ cách triển khai, ai được đổi, và nơi đặt quyền truy cập — mà không giao quyền đó cho bảng điều khiển của nhà cung cấp khác.
 
 > **Video demo** — sắp ra mắt.
 

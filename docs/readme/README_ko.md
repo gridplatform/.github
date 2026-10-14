@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### 셀프호스팅 인프라 오케스트레이션 — desired-state JSON, Terraform 모듈, 감사 가능한 릴리스.
+### 엔터프라이즈를 위한 셀프호스팅 인프라 오케스트레이션 플랫폼.
 
-**당신의 컨트롤 플레인. 당신의 자격 증명. 당신의 상태.**
+**기업이 인프라를 배포·운영하도록 — 통제권은 당신 곁에.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid는 **클라우드 인프라를 직접 요청·검토·실행**하도록 돕습니다. 설정을 다른 제품에 가두지 않습니다. 원하는 것을 적고, 이력이 남는 변경을 승인하며, 접근과 기록은 **당신**이 통제하는 장비와 저장소에 둡니다.
+Grid는 **셀프호스팅** 클라우드 인프라 배포·운영 플랫폼입니다. 기업이 어떻게 올리고, 누가 바꾸며, 접근이 어디에 있는지를 직접 유지하고 — 다른 업체 콘솔에 통제권을 넘기지 않습니다.
 
 > **데모 영상** — 곧 공개.
 

@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### セルフホストのインフラオーケストレーション — 望ましい状態の JSON、Terraform モジュール、監査可能なリリース。
+### エンタープライズ向けのセルフホスト型インフラオーケストレーションプラットフォーム。
 
-**あなたのコントロールプレーン。あなたの認証情報。あなたの状態。**
+**企業がインフラを導入・運用するために — 主導権はあなたのもとへ。**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid は、**自分でクラウド基盤を依頼・確認・実行する**ための仕組みです。設定を他社製品に閉じ込めません。欲しいものを記述し、履歴のわかる変更を承認し、アクセスと記録は**あなた**が管理するマシンとストレージに置きます。
+Grid は**セルフホスト**のクラウド基盤プラットフォームです。企業は展開の仕方、変更権限、アクセスの置き場所を自ら保ち、他社コンソールに主導権を渡さずに使えます。
 
 > **デモ動画** — 近日公開。
 

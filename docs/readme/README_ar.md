@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### تنسيق بنية تحتية مستضافة ذاتيًا — JSON للحالة المرغوبة، وحدات Terraform، إصدارات قابلة للتدقيق.
+### منصة تنسيق البنية التحتية المستضافة ذاتيًا.
 
-**مستوى التحكم لديك. بيانات الاعتماد لديك. حالتك.**
+**مبنية للمؤسسات لنشر البنية التحتية وإدارتها — مع سيطرة تبقى لكم.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-يساعدك Grid على **طلب البنية السحابية ومراجعتها وتشغيلها بنفسك** — دون حبس إعدادك في منتج شخص آخر. تصف ما تريد، توافق على التغييرات بتاريخ واضح، وتُبقي الوصول والسجلات على أجهزة وتخزين تحت سيطرة **ك**.
+Grid منصة **مستضافة ذاتيًا** لنشر وتشغيل البنية التحتية السحابية. تستخدمها المؤسسات للإبقاء على كيفية النشر ومن يغيّر وأين يعيش الوصول — دون تسليم تلك السيطرة لوحة تحكم مورّد آخر.
 
 > **فيديو تجريبي** — قريبًا.
 

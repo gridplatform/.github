@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### 自托管基础设施编排 — 期望状态 JSON、Terraform 模块、可审计发布。
+### 企业可用的自托管基础设施编排平台。
 
-**你的控制平面。你的凭证。你的状态。**
+**为企业部署与管理基础设施而建 — 控制权留在你手中。**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid 帮你**自己提出、审阅并运行云基础设施** — 不必把整套配置锁进别人的产品里。你描述想要什么，带着清晰历史批准变更，访问权限和记录都留在**你**控制的机器与存储上。
+Grid 是一套**自托管**的云基础设施部署与运行平台。企业用它掌握如何上线、谁能改、访问落在哪里 — 而不必把控制权交给别家厂商的控制台。
 
 > **演示视频** — 即将推出。
 

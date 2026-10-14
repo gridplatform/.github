@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### Orquestación de infraestructura autoalojada — JSON de estado deseado, módulos Terraform, releases auditables.
+### La plataforma de orquestación de infraestructura autoalojada.
 
-**Tu plano de control. Tus credenciales. Tu estado.**
+**Hecha para que las empresas desplieguen y gestionen infraestructura — con el control en sus manos.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid te ayuda a **pedir, revisar y ejecutar infraestructura en la nube tú mismo** — sin encerrar tu setup en el producto de otro. Describes lo que quieres, apruebas cambios con historial claro y mantienes el acceso y los registros en máquinas y almacenamiento bajo **tu** control.
+Grid es una plataforma **autoalojada** para desplegar y operar infraestructura en la nube. Las empresas la usan para conservar cómo se despliega, quién puede cambiarlo y dónde vive el acceso — sin ceder ese control a la consola de otro proveedor.
 
 > **Vídeo demo** — próximamente.
 

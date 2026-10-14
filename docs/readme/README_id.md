@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### Orkestrasi infrastruktur self-hosted — JSON desired-state, modul Terraform, release yang diaudit.
+### Platform orkestrasi infrastruktur self-hosted.
 
-**Control plane Anda. Kredensial Anda. State Anda.**
+**Dibangun agar perusahaan dapat men-deploy dan mengelola infrastruktur — dengan kontrol yang tetap milik Anda.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid membantu Anda **meminta, meninjau, dan menjalankan infrastruktur cloud sendiri** — tanpa mengunci setup ke produk orang lain. Anda menjelaskan apa yang diinginkan, menyetujui perubahan dengan riwayat yang jelas, dan menyimpan akses serta catatan di mesin dan penyimpanan di bawah kendali **Anda**.
+Grid adalah platform **self-hosted** untuk men-deploy dan menjalankan infrastruktur cloud. Perusahaan menggunakannya agar cara rilis, siapa yang boleh mengubah, dan di mana akses berada tetap di tangan mereka — tanpa menyerahkan kontrol itu ke konsol vendor lain.
 
 > **Video demo** — segera hadir.
 

@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### Orchestration d’infrastructure auto-hébergée — JSON d’état désiré, modules Terraform, releases auditées.
+### La plateforme d’orchestration d’infrastructure auto-hébergée.
 
-**Votre plan de contrôle. Vos identifiants. Votre état.**
+**Conçue pour que les entreprises déploient et gèrent leur infrastructure — avec un contrôle qui reste le leur.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid vous aide à **demander, revoir et exécuter votre infrastructure cloud vous-même** — sans enfermer votre setup dans le produit d’un autre. Vous décrivez ce que vous voulez, approuvez les changements avec un historique clair, et gardez l’accès et les traces sur des machines et un stockage sous **votre** contrôle.
+Grid est une plateforme **auto-hébergée** pour déployer et faire tourner l’infrastructure cloud. Les entreprises s’en servent pour garder la maîtrise du déploiement, des droits de modification et de l’endroit où vit l’accès — sans confier ce contrôle à la console d’un autre fournisseur.
 
 > **Vidéo démo** — bientôt.
 

@@ -4,9 +4,9 @@
 
 # Grid Platform
 
-### 自託管基礎建設編排 — 期望狀態 JSON、Terraform 模組、可稽核發布。
+### 企業可用的自託管基礎建設編排平台。
 
-**你的控制平面。你的憑證。你的狀態。**
+**為企業部署與管理基礎建設而建 — 控制權留在你手中。**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install
 
 ---
 
-Grid 協助你**自己提出、審閱並執行雲端基礎建設** — 不必把整套設定鎖進別人的產品裡。你描述想要什麼，帶著清楚歷史核准變更，存取權限與紀錄都留在**你**控制的機器與儲存上。
+Grid 是一套**自託管**的雲端基礎建設部署與運行平台。企業用它掌握如何上線、誰能改、存取落在哪裡 — 而不必把控制權交給別家廠商的主控台。
 
 > **示範影片** — 即將推出。
 
