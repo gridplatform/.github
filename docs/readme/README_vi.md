@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[Bắt đầu nhanh](#bắt-đầu-nhanh) · [Cách hoạt động](#cách-hoạt-động) · [Desired state của bạn](#desired-state-của-bạn) · [Kho mã](#kho-mã) · [Tài liệu](#tài-liệu)
+[Bắt đầu nhanh](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Cách hoạt động](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Desired state của bạn](https://github.com/gridplatform/grid-config#readme) · [Repositories](https://github.com/orgs/gridplatform/repositories) · [Tài liệu](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash

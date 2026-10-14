@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[クイックスタート](#クイックスタート) · [仕組み](#仕組み) · [あなたの desired state](#あなたの-desired-state) · [リポジトリ](#リポジトリ) · [ドキュメント](#ドキュメント)
+[クイックスタート](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [仕組み](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [あなたの desired state](https://github.com/gridplatform/grid-config#readme) · [リポジトリ](https://github.com/orgs/gridplatform/repositories) · [ドキュメント](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash

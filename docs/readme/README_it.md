@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[Avvio rapido](#avvio-rapido) · [Come funziona](#come-funziona) · [Il tuo stato desiderato](#il-tuo-stato-desiderato) · [Repository](#repository) · [Documentazione](#documentazione)
+[Avvio rapido](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Come funziona](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Il tuo stato desiderato](https://github.com/gridplatform/grid-config#readme) · [Repository](https://github.com/orgs/gridplatform/repositories) · [Documentazione](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash

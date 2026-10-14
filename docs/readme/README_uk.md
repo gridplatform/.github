@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[Швидкий старт](#швидкий-старт) · [Як це працює](#як-це-працює) · [Ваш desired state](#ваш-desired-state) · [Репозиторії](#репозиторії) · [Документація](#документація)
+[Швидкий старт](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Як це працює](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Ваш desired state](https://github.com/gridplatform/grid-config#readme) · [Репозиторії](https://github.com/orgs/gridplatform/repositories) · [Документація](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash

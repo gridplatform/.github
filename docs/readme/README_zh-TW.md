@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[快速開始](#快速開始) · [運作方式](#運作方式) · [你的期望狀態](#你的期望狀態) · [倉庫](#倉庫) · [文件](#文件)
+[快速開始](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [運作方式](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [你的期望狀態](https://github.com/gridplatform/grid-config#readme) · [倉庫](https://github.com/orgs/gridplatform/repositories) · [文件](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash

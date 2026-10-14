@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[빠른 시작](#빠른-시작) · [동작 방식](#동작-방식) · [당신의 desired state](#당신의-desired-state) · [저장소](#저장소) · [문서](#문서)
+[빠른 시작](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [동작 방식](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [당신의 desired state](https://github.com/gridplatform/grid-config#readme) · [저장소](https://github.com/orgs/gridplatform/repositories) · [문서](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash

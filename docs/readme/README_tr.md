@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[Hızlı başlangıç](#hızlı-başlangıç) · [Nasıl çalışır](#nasıl-çalışır) · [Desired state’iniz](#desired-state’iniz) · [Depolar](#depolar) · [Dokümantasyon](#dokümantasyon)
+[Hızlı başlangıç](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Nasıl çalışır](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Desired state’iniz](https://github.com/gridplatform/grid-config#readme) · [Depolar](https://github.com/orgs/gridplatform/repositories) · [Dokümantasyon](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash

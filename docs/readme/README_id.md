@@ -15,7 +15,7 @@
 
 **[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
 
-[Mulai cepat](#mulai-cepat) · [Cara kerja](#cara-kerja) · [Desired state Anda](#desired-state-anda) · [Repositori](#repositori) · [Dokumentasi](#dokumentasi)
+[Mulai cepat](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Cara kerja](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Desired state Anda](https://github.com/gridplatform/grid-config#readme) · [Repositori](https://github.com/orgs/gridplatform/repositories) · [Dokumentasi](https://github.com/gridplatform/grid-docs)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
