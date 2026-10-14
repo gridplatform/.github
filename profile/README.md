@@ -1,74 +1,90 @@
-<!-- # Grid Platform -->
+# Grid
+
+### Self-hosted infrastructure orchestration — desired-state JSON, Terraform modules, audited releases.
+
+**Your control plane. Your credentials. Your state.**
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
+[![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 
 ![Grid Banner](../readme-assets/banner.png)
 
-> **Infrastructure Orchestration Platform**  
-> Open-source, self-hosted control plane for cloud infrastructure — desired-state JSON, Terraform modules, releases with live logs. No vendor lock-in.
+**[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../STATUS.md)**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/gridplatform/grid-core?style=social)](https://github.com/gridplatform/grid-core)
+[Quick start](#quick-start) · [How it works](#how-it-works) · [Repositories](#repositories) · [Documentation](#documentation)
 
-## What is Grid?
+---
 
-Grid turns path-shaped infrastructure JSON into Terraform via a public module bank, runs **plan / apply / destroy** as audited **releases**, and ships a console for GitOps-style desired state.
+Grid turns path-shaped infrastructure JSON into Terraform via a public module bank, runs **plan / apply / destroy** as audited **releases**, and ships a console for GitOps-style desired state. You self-host on a VM or with Docker Compose — no vendor lock-in, plain Terraform exit path.
 
-**Highlights**
-- Self-hosted (your VM or Compose) — you keep credentials and state
-- Multi-cloud modules in [grid-terraform](https://github.com/gridplatform/grid-terraform) (AWS, GCP, …)
-- GitOps desired-state in [grid-config](https://github.com/gridplatform/grid-config) (or your fork)
-- Fork → PR to contribute; `main` is protected by review + CI
+> **Demo video** — coming soon.
 
-## Public repositories
+## Quick start
 
-| Repository | Purpose | Status |
-|------------|---------|--------|
-| [grid-core](https://github.com/gridplatform/grid-core) | Control-plane API + install packaging | **Public** — active |
-| [grid-ui](https://github.com/gridplatform/grid-ui) | Console (React) | **Public** — active |
-| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate / plan / apply / destroy | **Public** — active |
-| [grid-config](https://github.com/gridplatform/grid-config) | Sample desired-state (GitOps) | **Public** — active |
-| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Terraform module bank | **Public** — active |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Docs on GitHub (Markdown-first) | **Public** — active |
+1. Create **[remote Terraform state](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** (S3 / GCS / Azure).
+2. Install Grid on a VM (Compose by default).
 
-### Later / not required for install
+```bash
+export GRID_AUTH_ADMIN_PASSWORD='choose-a-strong-password'
+# set GRID_TF_BACKEND / GRID_TF_STATE_BUCKET / … after remote state exists
+curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
+```
 
-| Repository | Purpose | Status |
-|------------|---------|--------|
-| [grid-operator](https://github.com/gridplatform/grid-operator) | Kubernetes operator | Private — planned |
-| [grid-ml](https://github.com/gridplatform/grid-ml) | ML / assistant features | Private — planned |
-
-## Quick start — self-host
-
-Docs are meant to be read **on GitHub** (no docs website required): **[grid-docs](https://github.com/gridplatform/grid-docs#readme)**
-
-1. **[Remote Terraform state](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** (S3 / GCS / Azure)  
-2. **[Install on a VM](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)** (Compose by default)  
-3. **[Organizations guide](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md)**
+Or from a clone:
 
 ```bash
 git clone https://github.com/gridplatform/grid-core.git
 cd grid-core
-cp install/.env.example install/.env   # set GRID_AUTH_ADMIN_PASSWORD + GRID_TF_*
+cp install/.env.example install/.env   # password + GRID_TF_*
 docker compose -f install/docker-compose.yml --env-file install/.env up -d --build
 ```
 
-Or Ubuntu one-liner:
+Open `http://<host>/`. Prefer an **instance role / service account** on the VM over long-lived cloud keys.
 
-```bash
-export GRID_AUTH_ADMIN_PASSWORD='choose-a-strong-password'
-curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
-```
+Full path: **[Install on a VM](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**.
 
-## Learn more
+## How it works
 
-- [Documentation (grid-docs)](https://github.com/gridplatform/grid-docs)
-- [Website](https://gridplatform.org)
-- [Report issues](https://github.com/gridplatform/grid-core/issues)
+| Piece | Role |
+|-------|------|
+| Desired-state JSON | What to deploy (`grid-config` or your fork) |
+| Module bank | Terraform modules (`grid-terraform`) |
+| grid-cli | Generate → plan → apply → destroy |
+| grid-core | API, GitOps sync, releases + live logs |
+| grid-ui | Console |
+
+Cloud permissions come from the **host identity** (AWS instance role / GCP ADC). Desired-state files do not carry credentials. Production uses remote state so a replaced VM does not lose the Terraform map.
+
+## Repositories
+
+| Repo | Role |
+|------|------|
+| [grid-core](https://github.com/gridplatform/grid-core) | API + install (Compose, `install.sh`) |
+| [grid-ui](https://github.com/gridplatform/grid-ui) | Console |
+| [grid-cli](https://github.com/gridplatform/grid-cli) | Generate / plan / apply / destroy |
+| [grid-terraform](https://github.com/gridplatform/grid-terraform) | Module bank |
+| [grid-config](https://github.com/gridplatform/grid-config) | Sample desired-state (GitOps) |
+| [grid-docs](https://github.com/gridplatform/grid-docs) | Documentation |
+
+Done / in progress / planned: **[STATUS.md](../STATUS.md)**.
+
+## Documentation
+
+| Guide | Link |
+|-------|------|
+| Org adoption | [organizations.md](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md) |
+| Remote state | [remote-state.md](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md) |
+| Install (VM / Compose) | [install/](https://github.com/gridplatform/grid-docs/tree/main/docs/install) |
+| CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
+| Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
 
 ## Contributing
 
-Fork the repo → branch → open a pull request against `main`.  
-See each repository’s `CONTRIBUTING.md` (and [grid-docs](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md)).
+Fork → branch → PR against `main`. See [grid-docs CONTRIBUTING](https://github.com/gridplatform/grid-docs/blob/main/CONTRIBUTING.md) and each repo’s guidelines.
 
----
+Issues: [grid-core](https://github.com/gridplatform/grid-core/issues).
 
-**Built with ❤️ by the open-source community**
+## License
+
+MIT — see each repository’s `LICENSE`.
