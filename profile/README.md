@@ -101,6 +101,10 @@ Done / in progress / planned: **[STATUS.md](../STATUS.md)**.
 | CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
 | Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
 
+## Buy me a coffee
+
+Grid stays free and self-hosted. If it is useful to you and you want to help keep it going, [buy me a coffee](https://buymeacoffee.com/thisiskushal). A small one is plenty. Thank you for being here.
+
 ## Contributing
 
 Fork a **product** repository (core, ui, cli, terraform, docs) → branch → PR against `main`.  
