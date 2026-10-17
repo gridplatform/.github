@@ -9,13 +9,13 @@
 **สร้างขึ้นให้องค์กรติดตั้งและจัดการโครงสร้างพื้นฐาน — โดยยังถือสิทธิ์ควบคุมไว้เอง**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
-[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
+[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://gridplatform.github.io/doc/)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
 
-**[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
+**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../../STATUS.md)**
 
-[เริ่มอย่างรวดเร็ว](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [วิธีทำงาน](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Desired state ของคุณ](https://github.com/gridplatform/grid-config#readme) · [Repositories](https://github.com/orgs/gridplatform/repositories) · [เอกสาร](https://github.com/gridplatform/grid-docs)
+[เริ่มอย่างรวดเร็ว](https://gridplatform.github.io/doc/Install/VM) · [วิธีทำงาน](https://gridplatform.github.io/doc/Concepts/Overview) · [Desired state ของคุณ](https://github.com/gridplatform/grid-config#readme) · [Repositories](https://github.com/orgs/gridplatform/repositories) · [เอกสาร](https://gridplatform.github.io/doc/)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
@@ -33,7 +33,7 @@ Grid เป็นแพลตฟอร์ม**self-host** สำหรับต�
 
 ## เริ่มอย่างรวดเร็ว
 
-1. สร้าง **[remote Terraform state](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** (S3 / GCS / Azure)
+1. สร้าง **[remote Terraform state](https://gridplatform.github.io/doc/Install/Remote_State)** (S3 / GCS / Azure)
 2. ติดตั้ง Grid บน VM (ค่าเริ่มต้น Compose)
 
 ```bash
@@ -51,7 +51,7 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 เปิด `http://<host>/` ควรใช้ **instance role / service account** บน VM แทนคลาวด์คีย์ระยะยาว
 
-เส้นทางเต็ม: **[ติดตั้งบน VM](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**
+เส้นทางเต็ม: **[ติดตั้งบน VM](https://gridplatform.github.io/doc/Install/VM)**
 
 ## วิธีทำงาน
 
@@ -84,7 +84,7 @@ Grid คือที่ที่ทีมของคุณไป**ขอทร�
 | [grid-cli](https://github.com/gridplatform/grid-cli) | งานเดียวกันจากเทอร์มินัล โดยไม่ต้องเปิดเว็บไซต์ |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | ชิ้นส่วนพร้อมใช้สำหรับทรัพยากรคลาวด์ทั่วไป (เครือข่าย เซิร์ฟเวอร์ และอื่นๆ) |
 | [grid-config](https://github.com/gridplatform/grid-config) | คอนฟิกตัวอย่างสำหรับเรียนรู้ — **ไม่ใช่** setup จริงของคุณ (สร้าง repository ของคุณเอง) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | คู่มือภาษาเข้าใจง่าย |
+| [grid-docs](https://gridplatform.github.io/doc/) | คู่มือภาษาเข้าใจง่าย |
 
 เสร็จ / กำลังทำ / วางแผน: **[STATUS.md](../../STATUS.md)**
 
@@ -92,11 +92,11 @@ Grid คือที่ที่ทีมของคุณไป**ขอทร�
 
 | คู่มือ | ลิงก์ |
 |-------|------|
-| Org adoption | [organizations.md](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md) |
-| Remote state | [remote-state.md](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md) |
-| Install (VM / Compose) | [install/](https://github.com/gridplatform/grid-docs/tree/main/docs/install) |
-| CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
-| Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
+| Org adoption | [organizations.md](https://gridplatform.github.io/doc/) |
+| Remote state | [remote-state.md](https://gridplatform.github.io/doc/Install/Remote_State) |
+| Install (VM / Compose) | [install/](https://gridplatform.github.io/doc/Install/Overview) |
+| CLI (AWS / GCP) | [aws-gcp.md](https://gridplatform.github.io/doc/CLI/Overview) |
+| Concepts | [concepts/overview.md](https://gridplatform.github.io/doc/Concepts/Overview) |
 
 ## การมีส่วนร่วม
 

@@ -9,13 +9,13 @@
 **Dành cho doanh nghiệp triển khai và quản lý hạ tầng — với quyền kiểm soát vẫn thuộc về bạn.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
-[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
+[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://gridplatform.github.io/doc/)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
 
-**[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
+**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../../STATUS.md)**
 
-[Bắt đầu nhanh](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Cách hoạt động](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Desired state của bạn](https://github.com/gridplatform/grid-config#readme) · [Repositories](https://github.com/orgs/gridplatform/repositories) · [Tài liệu](https://github.com/gridplatform/grid-docs)
+[Bắt đầu nhanh](https://gridplatform.github.io/doc/Install/VM) · [Cách hoạt động](https://gridplatform.github.io/doc/Concepts/Overview) · [Desired state của bạn](https://github.com/gridplatform/grid-config#readme) · [Repositories](https://github.com/orgs/gridplatform/repositories) · [Tài liệu](https://gridplatform.github.io/doc/)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
@@ -33,7 +33,7 @@ Grid là nền tảng **tự lưu trữ** để triển khai và vận hành h�
 
 ## Bắt đầu nhanh
 
-1. Tạo **[remote Terraform state](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** (S3 / GCS / Azure).
+1. Tạo **[remote Terraform state](https://gridplatform.github.io/doc/Install/Remote_State)** (S3 / GCS / Azure).
 2. Cài Grid trên VM (mặc định Compose).
 
 ```bash
@@ -51,7 +51,7 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 Mở `http://<host>/`. Ưu tiên **instance role / service account** trên VM thay vì khóa cloud dài hạn.
 
-Đường đầy đủ: **[Cài trên VM](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**.
+Đường đầy đủ: **[Cài trên VM](https://gridplatform.github.io/doc/Install/VM)**.
 
 ## Cách hoạt động
 
@@ -84,7 +84,7 @@ Mượn ý từ ví dụ; giữ quyền sở hữu repository và cài đặt.
 | [grid-cli](https://github.com/gridplatform/grid-cli) | Cùng công việc từ dòng lệnh, không cần mở trang web |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | Các khối sẵn cho tài nguyên đám mây phổ biến (mạng, máy chủ, …) |
 | [grid-config](https://github.com/gridplatform/grid-config) | Cấu hình mẫu để học — **không** phải setup thật của bạn (hãy tạo repository riêng) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Hướng dẫn viết bằng lời dễ hiểu |
+| [grid-docs](https://gridplatform.github.io/doc/) | Hướng dẫn viết bằng lời dễ hiểu |
 
 Xong / đang làm / kế hoạch: **[STATUS.md](../../STATUS.md)**.
 
@@ -92,11 +92,11 @@ Xong / đang làm / kế hoạch: **[STATUS.md](../../STATUS.md)**.
 
 | Hướng dẫn | Liên kết |
 |-------|------|
-| Org adoption | [organizations.md](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md) |
-| Remote state | [remote-state.md](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md) |
-| Install (VM / Compose) | [install/](https://github.com/gridplatform/grid-docs/tree/main/docs/install) |
-| CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
-| Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
+| Org adoption | [organizations.md](https://gridplatform.github.io/doc/) |
+| Remote state | [remote-state.md](https://gridplatform.github.io/doc/Install/Remote_State) |
+| Install (VM / Compose) | [install/](https://gridplatform.github.io/doc/Install/Overview) |
+| CLI (AWS / GCP) | [aws-gcp.md](https://gridplatform.github.io/doc/CLI/Overview) |
+| Concepts | [concepts/overview.md](https://gridplatform.github.io/doc/Concepts/Overview) |
 
 ## Đóng góp
 

@@ -11,7 +11,7 @@ Metadata for **[gridplatform](https://github.com/gridplatform)**. This repositor
 | [`readme-assets/`](readme-assets/) | Banner assets |
 | [`github-org-description.md`](github-org-description.md) | Org about-text draft |
 
-**Install:** [grid-docs](https://github.com/gridplatform/grid-docs) · packaging in [grid-core/install](https://github.com/gridplatform/grid-core/tree/main/install)
+**Install:** [grid-docs](https://gridplatform.github.io/doc/) · packaging in [grid-core/install](https://github.com/gridplatform/grid-core/tree/main/install)
 
 **Website:** [gridplatform.org](https://gridplatform.org)
 

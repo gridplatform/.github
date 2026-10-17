@@ -9,13 +9,13 @@
 **기업이 인프라를 배포·운영하도록 — 통제권은 당신 곁에.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
-[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
+[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://gridplatform.github.io/doc/)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
 
-**[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
+**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../../STATUS.md)**
 
-[빠른 시작](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [동작 방식](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [당신의 desired state](https://github.com/gridplatform/grid-config#readme) · [저장소](https://github.com/orgs/gridplatform/repositories) · [문서](https://github.com/gridplatform/grid-docs)
+[빠른 시작](https://gridplatform.github.io/doc/Install/VM) · [동작 방식](https://gridplatform.github.io/doc/Concepts/Overview) · [당신의 desired state](https://github.com/gridplatform/grid-config#readme) · [저장소](https://github.com/orgs/gridplatform/repositories) · [문서](https://gridplatform.github.io/doc/)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
@@ -33,7 +33,7 @@ Grid는 **셀프호스팅** 클라우드 인프라 배포·운영 플랫폼입�
 
 ## 빠른 시작
 
-1. **[원격 Terraform 상태](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** 생성 (S3 / GCS / Azure).
+1. **[원격 Terraform 상태](https://gridplatform.github.io/doc/Install/Remote_State)** 생성 (S3 / GCS / Azure).
 2. VM에 Grid 설치 (기본 Compose).
 
 ```bash
@@ -51,7 +51,7 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 `http://<host>/` 열기. 장기 클라우드 키보다 VM의 **인스턴스 역할 / 서비스 계정**을 권장.
 
-전체 경로: **[VM에 설치](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**.
+전체 경로: **[VM에 설치](https://gridplatform.github.io/doc/Install/VM)**.
 
 ## 동작 방식
 
@@ -84,7 +84,7 @@ Grid는 **당신이** 통제하는 장비에서 돌아갑니다. 클라우드 �
 | [grid-cli](https://github.com/gridplatform/grid-cli) | 웹사이트 없이 터미널에서 같은 일을 하는 도구 |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | 흔한 클라우드 자원을 위한 준비된 조각 (네트워크, 서버 등) |
 | [grid-config](https://github.com/gridplatform/grid-config) | 배우기용 샘플 설정 — 실제 환경이 **아님** (직접 저장소를 만드세요) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | 쉬운 말로 쓴 가이드 |
+| [grid-docs](https://gridplatform.github.io/doc/) | 쉬운 말로 쓴 가이드 |
 
 완료 / 진행 중 / 계획: **[STATUS.md](../../STATUS.md)**.
 
@@ -92,11 +92,11 @@ Grid는 **당신이** 통제하는 장비에서 돌아갑니다. 클라우드 �
 
 | 가이드 | 링크 |
 |-------|------|
-| Org adoption | [organizations.md](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md) |
-| Remote state | [remote-state.md](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md) |
-| Install (VM / Compose) | [install/](https://github.com/gridplatform/grid-docs/tree/main/docs/install) |
-| CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
-| Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
+| Org adoption | [organizations.md](https://gridplatform.github.io/doc/) |
+| Remote state | [remote-state.md](https://gridplatform.github.io/doc/Install/Remote_State) |
+| Install (VM / Compose) | [install/](https://gridplatform.github.io/doc/Install/Overview) |
+| CLI (AWS / GCP) | [aws-gcp.md](https://gridplatform.github.io/doc/CLI/Overview) |
+| Concepts | [concepts/overview.md](https://gridplatform.github.io/doc/Concepts/Overview) |
 
 ## 기여
 

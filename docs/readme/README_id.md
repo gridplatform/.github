@@ -9,13 +9,13 @@
 **Dibangun agar perusahaan dapat men-deploy dan mengelola infrastruktur — dengan kontrol yang tetap milik Anda.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
-[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
+[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://gridplatform.github.io/doc/)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
 
-**[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
+**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../../STATUS.md)**
 
-[Mulai cepat](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Cara kerja](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Desired state Anda](https://github.com/gridplatform/grid-config#readme) · [Repositori](https://github.com/orgs/gridplatform/repositories) · [Dokumentasi](https://github.com/gridplatform/grid-docs)
+[Mulai cepat](https://gridplatform.github.io/doc/Install/VM) · [Cara kerja](https://gridplatform.github.io/doc/Concepts/Overview) · [Desired state Anda](https://github.com/gridplatform/grid-config#readme) · [Repositori](https://github.com/orgs/gridplatform/repositories) · [Dokumentasi](https://gridplatform.github.io/doc/)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
@@ -33,7 +33,7 @@ Grid adalah platform **self-hosted** untuk men-deploy dan menjalankan infrastruk
 
 ## Mulai cepat
 
-1. Buat **[remote Terraform state](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** (S3 / GCS / Azure).
+1. Buat **[remote Terraform state](https://gridplatform.github.io/doc/Install/Remote_State)** (S3 / GCS / Azure).
 2. Pasang Grid di VM (default Compose).
 
 ```bash
@@ -51,7 +51,7 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 Buka `http://<host>/`. Utamakan **instance role / service account** di VM daripada kunci cloud jangka panjang.
 
-Jalur lengkap: **[Pasang di VM](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**.
+Jalur lengkap: **[Pasang di VM](https://gridplatform.github.io/doc/Install/VM)**.
 
 ## Cara kerja
 
@@ -84,7 +84,7 @@ Pinjam ide dari contoh; tetap miliki repository dan pengaturannya.
 | [grid-cli](https://github.com/gridplatform/grid-cli) | Pekerjaan yang sama dari terminal, tanpa membuka situs |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | Bagian siap pakai untuk sumber daya cloud umum (jaringan, server, dan lainnya) |
 | [grid-config](https://github.com/gridplatform/grid-config) | Contoh konfigurasi untuk belajar — **bukan** setup nyata Anda (buat repositori sendiri) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Panduan dalam bahasa yang jelas |
+| [grid-docs](https://gridplatform.github.io/doc/) | Panduan dalam bahasa yang jelas |
 
 Selesai / berlangsung / direncanakan: **[STATUS.md](../../STATUS.md)**.
 
@@ -92,11 +92,11 @@ Selesai / berlangsung / direncanakan: **[STATUS.md](../../STATUS.md)**.
 
 | Panduan | Tautan |
 |-------|------|
-| Org adoption | [organizations.md](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md) |
-| Remote state | [remote-state.md](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md) |
-| Install (VM / Compose) | [install/](https://github.com/gridplatform/grid-docs/tree/main/docs/install) |
-| CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
-| Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
+| Org adoption | [organizations.md](https://gridplatform.github.io/doc/) |
+| Remote state | [remote-state.md](https://gridplatform.github.io/doc/Install/Remote_State) |
+| Install (VM / Compose) | [install/](https://gridplatform.github.io/doc/Install/Overview) |
+| CLI (AWS / GCP) | [aws-gcp.md](https://gridplatform.github.io/doc/CLI/Overview) |
+| Concepts | [concepts/overview.md](https://gridplatform.github.io/doc/Concepts/Overview) |
 
 ## Kontribusi
 

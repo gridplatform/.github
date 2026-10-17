@@ -20,7 +20,7 @@ Grid Platform is a self-hosted infrastructure orchestration platform. Enterprise
 - **Enterprise control** — deploy and manage infrastructure without vendor lock-in
 - **Clear history** — review and apply changes with a trail your team can follow
 - **Your settings** — keep desired-state in a repository you own
-- **Docs-first install** — [grid-docs](https://github.com/gridplatform/grid-docs)
+- **Docs-first install** — [grid-docs](https://gridplatform.github.io/doc/)
 
 ## Public product repositories
 - **grid-core** — Runs Grid + install packaging

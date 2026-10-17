@@ -9,13 +9,13 @@
 **Kurumların altyapıyı dağıtıp yönetmesi için — kontrol sizde kalsın diye.**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
-[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
+[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://gridplatform.github.io/doc/)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
 
-**[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
+**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../../STATUS.md)**
 
-[Hızlı başlangıç](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [Nasıl çalışır](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [Desired state’iniz](https://github.com/gridplatform/grid-config#readme) · [Depolar](https://github.com/orgs/gridplatform/repositories) · [Dokümantasyon](https://github.com/gridplatform/grid-docs)
+[Hızlı başlangıç](https://gridplatform.github.io/doc/Install/VM) · [Nasıl çalışır](https://gridplatform.github.io/doc/Concepts/Overview) · [Desired state’iniz](https://github.com/gridplatform/grid-config#readme) · [Depolar](https://github.com/orgs/gridplatform/repositories) · [Dokümantasyon](https://gridplatform.github.io/doc/)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
@@ -33,7 +33,7 @@ Grid, bulut altyapısını dağıtmak ve işletmek için **self-hosted** bir pla
 
 ## Hızlı başlangıç
 
-1. **[Uzak Terraform state](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** oluşturun (S3 / GCS / Azure).
+1. **[Uzak Terraform state](https://gridplatform.github.io/doc/Install/Remote_State)** oluşturun (S3 / GCS / Azure).
 2. Grid’i bir VM’e kurun (varsayılan Compose).
 
 ```bash
@@ -51,7 +51,7 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 `http://<host>/` adresini açın. Uzun ömürlü bulut anahtarları yerine VM’de **instance role / service account** tercih edin.
 
-Tam yol: **[VM’e kurulum](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**.
+Tam yol: **[VM’e kurulum](https://gridplatform.github.io/doc/Install/VM)**.
 
 ## Nasıl çalışır
 
@@ -84,7 +84,7 @@ Kendi kurulumunuz için:
 | [grid-cli](https://github.com/gridplatform/grid-cli) | Aynı işi web sitesi açmadan terminalden yapan araç |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | Sık kullanılan bulut kaynakları için hazır parçalar (ağlar, sunucular ve daha fazlası) |
 | [grid-config](https://github.com/gridplatform/grid-config) | Öğrenmek için örnek ayarlar — gerçek kurulumunuz **değil** (kendi deponuzu oluşturun) |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | Sade dille yazılmış rehberler |
+| [grid-docs](https://gridplatform.github.io/doc/) | Sade dille yazılmış rehberler |
 
 Bitti / devam ediyor / planlandı: **[STATUS.md](../../STATUS.md)**.
 
@@ -92,11 +92,11 @@ Bitti / devam ediyor / planlandı: **[STATUS.md](../../STATUS.md)**.
 
 | Rehber | Bağlantı |
 |-------|------|
-| Org adoption | [organizations.md](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md) |
-| Remote state | [remote-state.md](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md) |
-| Install (VM / Compose) | [install/](https://github.com/gridplatform/grid-docs/tree/main/docs/install) |
-| CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
-| Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
+| Org adoption | [organizations.md](https://gridplatform.github.io/doc/) |
+| Remote state | [remote-state.md](https://gridplatform.github.io/doc/Install/Remote_State) |
+| Install (VM / Compose) | [install/](https://gridplatform.github.io/doc/Install/Overview) |
+| CLI (AWS / GCP) | [aws-gcp.md](https://gridplatform.github.io/doc/CLI/Overview) |
+| Concepts | [concepts/overview.md](https://gridplatform.github.io/doc/Concepts/Overview) |
 
 ## Katkıda bulunma
 

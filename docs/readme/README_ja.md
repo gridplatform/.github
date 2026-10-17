@@ -9,13 +9,13 @@
 **企業がインフラを導入・運用するために — 主導権はあなたのもとへ。**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](../../LICENSE)
-[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://github.com/gridplatform/grid-docs)
+[![Docs](https://img.shields.io/badge/docs-grid--docs-0A66C2?style=flat-square)](https://gridplatform.github.io/doc/)
 [![Website](https://img.shields.io/badge/website-gridplatform.org-111111?style=flat-square)](https://gridplatform.org)
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../../STATUS.md)
 
-**[Website](https://gridplatform.org) · [Docs](https://github.com/gridplatform/grid-docs) · [Status](../../STATUS.md)**
+**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../../STATUS.md)**
 
-[クイックスタート](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md) · [仕組み](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) · [あなたの desired state](https://github.com/gridplatform/grid-config#readme) · [リポジトリ](https://github.com/orgs/gridplatform/repositories) · [ドキュメント](https://github.com/gridplatform/grid-docs)
+[クイックスタート](https://gridplatform.github.io/doc/Install/VM) · [仕組み](https://gridplatform.github.io/doc/Concepts/Overview) · [あなたの desired state](https://github.com/gridplatform/grid-config#readme) · [リポジトリ](https://github.com/orgs/gridplatform/repositories) · [ドキュメント](https://gridplatform.github.io/doc/)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/gridplatform/grid-core/main/install/install.sh | sudo -E bash
@@ -33,7 +33,7 @@ Grid は**セルフホスト**のクラウド基盤プラットフォームで�
 
 ## クイックスタート
 
-1. **[リモート Terraform 状態](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md)** を作成（S3 / GCS / Azure）。
+1. **[リモート Terraform 状態](https://gridplatform.github.io/doc/Install/Remote_State)** を作成（S3 / GCS / Azure）。
 2. VM に Grid をインストール（既定は Compose）。
 
 ```bash
@@ -51,7 +51,7 @@ docker compose -f install/docker-compose.yml --env-file install/.env up -d --bui
 
 `http://<host>/` を開く。長期のクラウドキーより VM の **インスタンスロール / サービスアカウント** を優先。
 
-詳細：**[VM へのインストール](https://github.com/gridplatform/grid-docs/blob/main/docs/install/vm.md)**。
+詳細：**[VM へのインストール](https://gridplatform.github.io/doc/Install/VM)**。
 
 ## 仕組み
 
@@ -84,7 +84,7 @@ Grid は**あなたが**管理するマシンで動かします。クラウド�
 | [grid-cli](https://github.com/gridplatform/grid-cli) | ウェブサイトを開かず、同じ作業をターミナルから行うツール |
 | [grid-terraform](https://github.com/gridplatform/grid-terraform) | よく使うクラウド資源の既製パーツ（ネットワーク、サーバーなど） |
 | [grid-config](https://github.com/gridplatform/grid-config) | 学び用のサンプル設定 — 本番のセットアップでは**ない**（自分のリポジトリを作る） |
-| [grid-docs](https://github.com/gridplatform/grid-docs) | わかりやすいガイド |
+| [grid-docs](https://gridplatform.github.io/doc/) | わかりやすいガイド |
 
 完了 / 進行中 / 予定：**[STATUS.md](../../STATUS.md)**。
 
@@ -92,11 +92,11 @@ Grid は**あなたが**管理するマシンで動かします。クラウド�
 
 | ガイド | リンク |
 |-------|------|
-| Org adoption | [organizations.md](https://github.com/gridplatform/grid-docs/blob/main/docs/organizations.md) |
-| Remote state | [remote-state.md](https://github.com/gridplatform/grid-docs/blob/main/docs/install/remote-state.md) |
-| Install (VM / Compose) | [install/](https://github.com/gridplatform/grid-docs/tree/main/docs/install) |
-| CLI (AWS / GCP) | [aws-gcp.md](https://github.com/gridplatform/grid-docs/blob/main/docs/cli/aws-gcp.md) |
-| Concepts | [concepts/overview.md](https://github.com/gridplatform/grid-docs/blob/main/docs/concepts/overview.md) |
+| Org adoption | [organizations.md](https://gridplatform.github.io/doc/) |
+| Remote state | [remote-state.md](https://gridplatform.github.io/doc/Install/Remote_State) |
+| Install (VM / Compose) | [install/](https://gridplatform.github.io/doc/Install/Overview) |
+| CLI (AWS / GCP) | [aws-gcp.md](https://gridplatform.github.io/doc/CLI/Overview) |
+| Concepts | [concepts/overview.md](https://gridplatform.github.io/doc/Concepts/Overview) |
 
 ## コントリビュート
 
