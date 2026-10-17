@@ -14,7 +14,7 @@
 [![Status](https://img.shields.io/badge/status-living-2ea44f?style=flat-square)](../STATUS.md)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/thisiskushal)
 
-**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../STATUS.md) · [Buy me a coffee](https://buymeacoffee.com/thisiskushal)**
+**[Website](https://gridplatform.org) · [Docs](https://gridplatform.github.io/doc/) · [Status](../STATUS.md)**
 
 [Quick start](https://gridplatform.github.io/doc/Install/VM) · [How it works](https://gridplatform.github.io/doc/Concepts/Overview) · [Your desired state](https://github.com/gridplatform/grid-config#readme) · [Repositories](https://github.com/orgs/gridplatform/repositories) · [Documentation](https://gridplatform.github.io/doc/)
 
